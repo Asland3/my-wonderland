@@ -24,81 +24,7 @@
                     "wasd-controls": {
                         "headObject": "14"
                     }
-                },
-                {
-                    "type": "custom"
                 }
-            ]
-        },
-        "15": {
-            "name": "FloorPlane",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "7",
-                        "material": "20"
-                    },
-                    "active": true
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "collider": "aabb",
-                        "aabb": {
-                            "extents": [
-                                4.0,
-                                0.05,
-                                4.0
-                            ]
-                        },
-                        "groups": 4
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                0.0,
-                1.1920928955078125e-7
-            ],
-            "rotation": [
-                -0.7072496,
-                0.0,
-                0.0,
-                0.7069638
-            ],
-            "scaling": [
-                4.0,
-                4.0,
-                4.0
-            ]
-        },
-        "16": {
-            "name": "Cube",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "22"
-                    }
-                }
-            ],
-            "translation": [
-                2.9802322387695313e-8,
-                0.4999999,
-                5.960464477539065e-8
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                0.5,
-                0.5,
-                0.5
             ]
         },
         "17": {
@@ -205,116 +131,6 @@
                 1.0,
                 1.0,
                 1.0
-            ]
-        },
-        "21": {
-            "name": "Light",
-            "components": [
-                {
-                    "type": "light",
-                    "light": {
-                        "intensity": 3.3329999
-                    }
-                }
-            ],
-            "translation": [
-                0.0,
-                3.0,
-                2.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "23": {
-            "name": "Light.000",
-            "components": [
-                {
-                    "type": "light",
-                    "light": {
-                        "intensity": 3.3329999
-                    }
-                }
-            ],
-            "translation": [
-                -1.0,
-                3.0,
-                -1.0
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "24": {
-            "name": "Cone",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "10",
-                        "material": "25"
-                    }
-                }
-            ],
-            "translation": [
-                1.5,
-                1.0,
-                -1.4901161193847656e-8
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "27": {
-            "name": "Sphere",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.4999999,
-                0.75,
-                -1.25
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                0.75,
-                0.75,
-                0.75
             ]
         },
         "53": {
@@ -1739,41 +1555,1534 @@
                 }
             ]
         },
-        "194": {
-            "name": "Panel",
+        "708": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "709": {
+            "link": {
+                "name": "f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "708"
+        },
+        "710": {
+            "link": {
+                "name": "RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "709"
+        },
+        "711": {
+            "link": {
+                "name": "Candle<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "712": {
+            "link": {
+                "name": "Candle_Candle_0<Candle<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "711"
+        },
+        "713": {
+            "link": {
+                "name": "Bath<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "714": {
+            "link": {
+                "name": "Bath_Bath_0<Bath<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "713"
+        },
+        "715": {
+            "link": {
+                "name": "Sink<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "716": {
+            "link": {
+                "name": "Sink_Bathtube_0<Sink<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "715"
+        },
+        "717": {
+            "link": {
+                "name": "Pic 1<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "718": {
+            "link": {
+                "name": "Pic 1_Frames_0<Pic 1<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "717"
+        },
+        "719": {
+            "link": {
+                "name": "Pic 2<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "720": {
+            "link": {
+                "name": "Pic 2_Frames_0<Pic 2<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "719"
+        },
+        "721": {
+            "link": {
+                "name": "Mirror<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "722": {
+            "link": {
+                "name": "Mirror_Frames_0<Mirror<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "721"
+        },
+        "723": {
+            "link": {
+                "name": "Hook<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "724": {
+            "link": {
+                "name": "Hook_Door and windows_0<Hook<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "723"
+        },
+        "725": {
+            "link": {
+                "name": "HookTowel<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "726": {
+            "link": {
+                "name": "HookTowel_Fabric_0<HookTowel<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "725"
+        },
+        "727": {
+            "link": {
+                "name": "Door<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "728": {
+            "link": {
+                "name": "Door_Door and windows_0<Door<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "727"
+        },
+        "729": {
+            "link": {
+                "name": "Door_Hinges<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "730": {
+            "link": {
+                "name": "Door_Hinges_Door and windows_0<Door_Hinges<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "729"
+        },
+        "731": {
+            "link": {
+                "name": "Fabric_Towel_folded2<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "732": {
+            "link": {
+                "name": "Fabric_Towel_folded2_Fabric_0<Fabric_Towel_folded2<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "731"
+        },
+        "733": {
+            "link": {
+                "name": "Fabric_Towel_folded<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "734": {
+            "link": {
+                "name": "Fabric_Towel_folded_Fabric_0<Fabric_Towel_folded<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "733"
+        },
+        "735": {
+            "link": {
+                "name": "Fabric_Sponge<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "736": {
+            "link": {
+                "name": "Fabric_Sponge_Fabric_0<Fabric_Sponge<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "735"
+        },
+        "737": {
+            "link": {
+                "name": "Curtain_flat<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "738": {
+            "link": {
+                "name": "Curtain_flat_Door and windows_0<Curtain_flat<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "737"
+        },
+        "739": {
+            "link": {
+                "name": "Fabric_ Towel_Bath<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "740": {
+            "link": {
+                "name": "Fabric_ Towel_Bath_Fabric_0<Fabric_ Towel_Bath<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "739"
+        },
+        "741": {
+            "link": {
+                "name": "Fabric_Carpet<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "742": {
+            "link": {
+                "name": "Fabric_Carpet_Fabric_0<Fabric_Carpet<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "741"
+        },
+        "743": {
+            "link": {
+                "name": "Fabric_Carpet Small<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "744": {
+            "link": {
+                "name": "Fabric_Carpet Small_Fabric_0<Fabric_Carpet Small<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "743"
+        },
+        "745": {
+            "link": {
+                "name": "Floor tile<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "746": {
+            "link": {
+                "name": "Floor tile_Floor_0<Floor tile<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "745"
+        },
+        "747": {
+            "link": {
+                "name": "Selling_holder_Big<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "748": {
+            "link": {
+                "name": "Selling_holder_Big_Wall_Trim_0<Selling_holder_Big<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "747"
+        },
+        "749": {
+            "link": {
+                "name": "Selling_holder_Small<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "750": {
+            "link": {
+                "name": "Selling_holder_Small_Wall_Trim_0<Selling_holder_Small<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "749"
+        },
+        "751": {
+            "link": {
+                "name": "Selling_top<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "752": {
+            "link": {
+                "name": "Selling_top_Selling_Bump_0<Selling_top<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "751"
+        },
+        "753": {
+            "link": {
+                "name": "Wall_corner_shelf<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "754": {
+            "link": {
+                "name": "Wall_corner_shelf_Wall_Trim_0<Wall_corner_shelf<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "753"
+        },
+        "755": {
+            "link": {
+                "name": "Wall_corner_shelf_Glass_0<Wall_corner_shelf<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "753"
+        },
+        "756": {
+            "link": {
+                "name": "Wall_Doorway<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "757": {
+            "link": {
+                "name": "Wall_Doorway_Wall_Trim_0<Wall_Doorway<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "756"
+        },
+        "758": {
+            "link": {
+                "name": "Wall_Doorway_Door<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "759": {
+            "link": {
+                "name": "Wall_Doorway_Door_Wall_Trim_0<Wall_Doorway_Door<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "758"
+        },
+        "760": {
+            "link": {
+                "name": "Wall_Window<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "761": {
+            "link": {
+                "name": "Wall_Window_Wall_Trim_0<Wall_Window<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "760"
+        },
+        "762": {
+            "link": {
+                "name": "Wall_Window_Door and windows_0<Wall_Window<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "760"
+        },
+        "763": {
+            "link": {
+                "name": "Wall_Clear_long<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "764": {
+            "link": {
+                "name": "Wall_Clear_long_Wall_Trim_0<Wall_Clear_long<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "763"
+        },
+        "765": {
+            "link": {
+                "name": "Wall_Clear_Short<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "766": {
+            "link": {
+                "name": "Wall_Clear_Short_Wall_Trim_0<Wall_Clear_Short<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "765"
+        },
+        "767": {
+            "link": {
+                "name": "Wall_Dam1_long<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "768": {
+            "link": {
+                "name": "Wall_Dam1_long_Wall_Trim_0<Wall_Dam1_long<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "767"
+        },
+        "769": {
+            "link": {
+                "name": "Cap_Can_1<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "770": {
+            "link": {
+                "name": "Cap_Can_1_Cups_0<Cap_Can_1<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "769"
+        },
+        "771": {
+            "link": {
+                "name": "Cup_Can_2<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "772": {
+            "link": {
+                "name": "Cup_Can_2_Cups_0<Cup_Can_2<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "771"
+        },
+        "773": {
+            "link": {
+                "name": "Cup_Ceramic_1<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "774": {
+            "link": {
+                "name": "Cup_Ceramic_1_Cups_0<Cup_Ceramic_1<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "773"
+        },
+        "775": {
+            "link": {
+                "name": "Cup_Ceramic_2<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "776": {
+            "link": {
+                "name": "Cup_Ceramic_2_Cups_0<Cup_Ceramic_2<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "775"
+        },
+        "777": {
+            "link": {
+                "name": "Cup_Ceramic_3<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "778": {
+            "link": {
+                "name": "Cup_Ceramic_3_Cups_0<Cup_Ceramic_3<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "777"
+        },
+        "779": {
+            "link": {
+                "name": "Cup_Ceramic_4<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "780": {
+            "link": {
+                "name": "Cup_Ceramic_4_Cups_0<Cup_Ceramic_4<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "779"
+        },
+        "781": {
+            "link": {
+                "name": "Cup_Ceramic_5<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "782": {
+            "link": {
+                "name": "Cup_Ceramic_5_Cups_0<Cup_Ceramic_5<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "781"
+        },
+        "783": {
+            "link": {
+                "name": "Cup_glass_1<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "784": {
+            "link": {
+                "name": "Cup_glass_1_Cups_0<Cup_glass_1<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "783"
+        },
+        "785": {
+            "link": {
+                "name": "Cup_glass_2<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "786": {
+            "link": {
+                "name": "Cup_glass_2_Cups_0<Cup_glass_2<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "785"
+        },
+        "787": {
+            "link": {
+                "name": "Cup_sanitazer<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "788": {
+            "link": {
+                "name": "Cup_sanitazer_Cups_0<Cup_sanitazer<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "787"
+        },
+        "789": {
+            "link": {
+                "name": "Wall_Corner<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "790": {
+            "link": {
+                "name": "Wall_Corner_Wall_Trim_0<Wall_Corner<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "789"
+        },
+        "791": {
+            "link": {
+                "name": "Candle.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "792": {
+            "link": {
+                "name": "Candle.001_Candle_0<Candle.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "791"
+        },
+        "793": {
+            "link": {
+                "name": "Bath.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "794": {
+            "link": {
+                "name": "Bath.001_Bath_0<Bath.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "793"
+        },
+        "795": {
+            "link": {
+                "name": "Sink.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "796": {
+            "link": {
+                "name": "Sink.001_Bathtube_0<Sink.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "795"
+        },
+        "797": {
+            "link": {
+                "name": "Pic 1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "798": {
+            "link": {
+                "name": "Pic 1.001_Frames_0<Pic 1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "797"
+        },
+        "799": {
+            "link": {
+                "name": "Pic 2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "800": {
+            "link": {
+                "name": "Pic 2.001_Frames_0<Pic 2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "799"
+        },
+        "801": {
+            "link": {
+                "name": "Mirror.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "802": {
+            "link": {
+                "name": "Mirror.001_Frames_0<Mirror.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "801"
+        },
+        "803": {
+            "link": {
+                "name": "Hook.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "804": {
+            "link": {
+                "name": "Hook.001_Door and windows_0<Hook.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "803"
+        },
+        "805": {
+            "link": {
+                "name": "HookTowel.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "806": {
+            "link": {
+                "name": "HookTowel.001_Fabric_0<HookTowel.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "805"
+        },
+        "807": {
+            "link": {
+                "name": "Door.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "808": {
+            "link": {
+                "name": "Door.001_Door and windows_0<Door.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "807"
+        },
+        "809": {
+            "link": {
+                "name": "Door_Hinges.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "810": {
+            "link": {
+                "name": "Door_Hinges.001_Door and windows_0<Door_Hinges.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "809"
+        },
+        "811": {
+            "link": {
+                "name": "Fabric_Towel_folded2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "812": {
+            "link": {
+                "name": "Fabric_Towel_folded2.001_Fabric_0<Fabric_Towel_folded2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "811"
+        },
+        "813": {
+            "link": {
+                "name": "Fabric_Towel_folded.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "814": {
+            "link": {
+                "name": "Fabric_Towel_folded.001_Fabric_0<Fabric_Towel_folded.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "813"
+        },
+        "815": {
+            "link": {
+                "name": "Fabric_Sponge.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "816": {
+            "link": {
+                "name": "Fabric_Sponge.001_Fabric_0<Fabric_Sponge.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "815"
+        },
+        "817": {
+            "link": {
+                "name": "Curtain_flat.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "818": {
+            "link": {
+                "name": "Curtain_flat.001_Door and windows_0<Curtain_flat.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "817"
+        },
+        "819": {
+            "link": {
+                "name": "Fabric_ Towel_Bath.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "820": {
+            "link": {
+                "name": "Fabric_ Towel_Bath.001_Fabric_0<Fabric_ Towel_Bath.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "819"
+        },
+        "821": {
+            "link": {
+                "name": "Fabric_Carpet.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "822": {
+            "link": {
+                "name": "Fabric_Carpet.001_Fabric_0<Fabric_Carpet.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "821"
+        },
+        "823": {
+            "link": {
+                "name": "Fabric_Carpet Small.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "824": {
+            "link": {
+                "name": "Fabric_Carpet Small.001_Fabric_0<Fabric_Carpet Small.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "823"
+        },
+        "825": {
+            "link": {
+                "name": "Floor tile.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "826": {
+            "link": {
+                "name": "Floor tile.001_Floor_0<Floor tile.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "825"
+        },
+        "827": {
+            "link": {
+                "name": "Selling_holder_Big.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "828": {
+            "link": {
+                "name": "Selling_holder_Big.001_Wall_Trim_0<Selling_holder_Big.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "827"
+        },
+        "829": {
+            "link": {
+                "name": "Selling_holder_Small.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "830": {
+            "link": {
+                "name": "Selling_holder_Small.001_Wall_Trim_0<Selling_holder_Small.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "829"
+        },
+        "831": {
+            "link": {
+                "name": "Selling_top.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "832": {
+            "link": {
+                "name": "Selling_top.001_Selling_Bump_0<Selling_top.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "831"
+        },
+        "833": {
+            "link": {
+                "name": "Wall_corner_shelf.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "834": {
+            "link": {
+                "name": "Wall_corner_shelf.001_Wall_Trim_0<Wall_corner_shelf.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "833"
+        },
+        "835": {
+            "link": {
+                "name": "Wall_corner_shelf.001_Glass_0<Wall_corner_shelf.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "833"
+        },
+        "836": {
+            "link": {
+                "name": "Wall_Doorway_Door.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "837": {
+            "link": {
+                "name": "Wall_Doorway_Door.001_Wall_Trim_0<Wall_Doorway_Door.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "836"
+        },
+        "838": {
+            "link": {
+                "name": "Wall_Window.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "839": {
+            "link": {
+                "name": "Wall_Window.001_Wall_Trim_0<Wall_Window.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "838"
+        },
+        "840": {
+            "link": {
+                "name": "Wall_Window.001_Door and windows_0<Wall_Window.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "838"
+        },
+        "841": {
+            "link": {
+                "name": "Wall_Clear_long.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "842": {
+            "link": {
+                "name": "Wall_Clear_long.001_Wall_Trim_0<Wall_Clear_long.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "841"
+        },
+        "843": {
+            "link": {
+                "name": "Wall_Dam1_long.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "844": {
+            "link": {
+                "name": "Wall_Dam1_long.001_Wall_Trim_0<Wall_Dam1_long.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "843"
+        },
+        "845": {
+            "link": {
+                "name": "Cap_Can_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "846": {
+            "link": {
+                "name": "Cap_Can_1.001_Cups_0<Cap_Can_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "845"
+        },
+        "847": {
+            "link": {
+                "name": "Cup_Can_2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "848": {
+            "link": {
+                "name": "Cup_Can_2.001_Cups_0<Cup_Can_2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "847"
+        },
+        "849": {
+            "link": {
+                "name": "Cup_Ceramic_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "850": {
+            "link": {
+                "name": "Cup_Ceramic_1.001_Cups_0<Cup_Ceramic_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "849"
+        },
+        "851": {
+            "link": {
+                "name": "Cup_Ceramic_2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "852": {
+            "link": {
+                "name": "Cup_Ceramic_2.001_Cups_0<Cup_Ceramic_2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "851"
+        },
+        "853": {
+            "link": {
+                "name": "Cup_Ceramic_3.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "854": {
+            "link": {
+                "name": "Cup_Ceramic_3.001_Cups_0<Cup_Ceramic_3.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "853"
+        },
+        "855": {
+            "link": {
+                "name": "Cup_Ceramic_4.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "856": {
+            "link": {
+                "name": "Cup_Ceramic_4.001_Cups_0<Cup_Ceramic_4.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "855"
+        },
+        "857": {
+            "link": {
+                "name": "Cup_Ceramic_5.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "858": {
+            "link": {
+                "name": "Cup_Ceramic_5.001_Cups_0<Cup_Ceramic_5.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "857"
+        },
+        "859": {
+            "link": {
+                "name": "Cup_glass_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "860": {
+            "link": {
+                "name": "Cup_glass_1.001_Cups_0<Cup_glass_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "859"
+        },
+        "861": {
+            "link": {
+                "name": "Cup_glass_2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "862": {
+            "link": {
+                "name": "Cup_glass_2.001_Cups_0<Cup_glass_2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "861"
+        },
+        "863": {
+            "link": {
+                "name": "Cup_sanitazer.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "864": {
+            "link": {
+                "name": "Cup_sanitazer.001_Cups_0<Cup_sanitazer.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "863"
+        },
+        "865": {
+            "link": {
+                "name": "Wall_Corner.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "866": {
+            "link": {
+                "name": "Wall_Corner.001_Wall_Trim_0<Wall_Corner.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "865"
+        },
+        "867": {
+            "link": {
+                "name": "Wall_Clear_Short.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "868": {
+            "link": {
+                "name": "Wall_Clear_Short.002_Wall_Trim_0<Wall_Clear_Short.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "867"
+        },
+        "869": {
+            "link": {
+                "name": "Wall_Window.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "870": {
+            "link": {
+                "name": "Wall_Window.002_Wall_Trim_0<Wall_Window.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "869"
+        },
+        "871": {
+            "link": {
+                "name": "Wall_Window.002_Door and windows_0<Wall_Window.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "869"
+        },
+        "872": {
+            "link": {
+                "name": "Wall_Corner.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "873": {
+            "link": {
+                "name": "Wall_Corner.002_Wall_Trim_0<Wall_Corner.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "872"
+        },
+        "874": {
+            "link": {
+                "name": "Sink.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "875": {
+            "link": {
+                "name": "Sink.002_Bathtube_0<Sink.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "874"
+        },
+        "876": {
+            "link": {
+                "name": "Hook.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "877": {
+            "link": {
+                "name": "Hook.002_Door and windows_0<Hook.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "876"
+        },
+        "878": {
+            "link": {
+                "name": "Hook.003<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "879": {
+            "link": {
+                "name": "Hook.003_Door and windows_0<Hook.003<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "878"
+        },
+        "880": {
+            "link": {
+                "name": "Wall_Window.003<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "881": {
+            "link": {
+                "name": "Wall_Window.003_Wall_Trim_0<Wall_Window.003<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "880"
+        },
+        "882": {
+            "link": {
+                "name": "Wall_Window.003_Door and windows_0<Wall_Window.003<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "880"
+        },
+        "883": {
+            "link": {
+                "name": "Wall_Clear_long.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "884": {
+            "link": {
+                "name": "Wall_Clear_long.002_Wall_Trim_0<Wall_Clear_long.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "883"
+        },
+        "885": {
+            "link": {
+                "name": "Wall_Doorway_Door.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "886": {
+            "link": {
+                "name": "Wall_Doorway_Door.002_Wall_Trim_0<Wall_Doorway_Door.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "885"
+        },
+        "887": {
+            "link": {
+                "name": "Wall_Corner.004<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "888": {
+            "link": {
+                "name": "Wall_Corner.004_Wall_Trim_0<Wall_Corner.004<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "887"
+        },
+        "889": {
+            "link": {
+                "name": "Curtain_flat.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "890": {
+            "link": {
+                "name": "Curtain_flat.002_Door and windows_0<Curtain_flat.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "889"
+        },
+        "891": {
+            "link": {
+                "name": "Wall_Clear_Short.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "892": {
+            "link": {
+                "name": "Wall_Clear_Short.001_Wall_Trim_0<Wall_Clear_Short.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "891"
+        },
+        "893": {
+            "link": {
+                "name": "Wall_Clear_Short.003<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "894": {
+            "link": {
+                "name": "Wall_Clear_Short.003_Wall_Trim_0<Wall_Clear_Short.003<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "893"
+        },
+        "895": {
+            "link": {
+                "name": "Candle.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "896": {
+            "link": {
+                "name": "Candle.002_Candle_0<Candle.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "895"
+        },
+        "897": {
+            "link": {
+                "name": "Hook.004<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "898": {
+            "link": {
+                "name": "Hook.004_Door and windows_0<Hook.004<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "897"
+        },
+        "899": {
+            "link": {
+                "name": "Candle.003<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "900": {
+            "link": {
+                "name": "Candle.003_Candle_0<Candle.003<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "899"
+        },
+        "901": {
+            "link": {
+                "name": "Hook.005<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "902": {
+            "link": {
+                "name": "Hook.005_Door and windows_0<Hook.005<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "901"
+        },
+        "903": {
+            "link": {
+                "name": "Candle.004<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "904": {
+            "link": {
+                "name": "Candle.004_Candle_0<Candle.004<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "903"
+        },
+        "905": {
+            "link": {
+                "name": "Hook.006<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "906": {
+            "link": {
+                "name": "Hook.006_Door and windows_0<Hook.006<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "905"
+        },
+        "907": {
+            "link": {
+                "name": "Candle.005<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "908": {
+            "link": {
+                "name": "Candle.005_Candle_0<Candle.005<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "907"
+        },
+        "909": {
+            "link": {
+                "name": "Hook.007<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "910": {
+            "link": {
+                "name": "Hook.007_Door and windows_0<Hook.007<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "909"
+        },
+        "911": {
+            "link": {
+                "name": "Selling_holder_Big.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "912": {
+            "link": {
+                "name": "Selling_holder_Big.002_Wall_Trim_0<Selling_holder_Big.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "911"
+        },
+        "913": {
+            "link": {
+                "name": "Selling_holder_Small.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "914": {
+            "link": {
+                "name": "Selling_holder_Small.002_Wall_Trim_0<Selling_holder_Small.002<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "913"
+        },
+        "915": {
+            "link": {
+                "name": "Wall_Clear_Short.004<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710"
+        },
+        "916": {
+            "link": {
+                "name": "Wall_Clear_Short.004_Wall_Trim_0<Wall_Clear_Short.004<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "915"
+        },
+        "918": {
+            "name": "Light",
+            "parent": null,
             "components": [
                 {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "195",
-                        "material": "202"
+                    "type": "light",
+                    "light": {
+                        "intensity": 2.7999999
                     }
                 }
             ],
             "translation": [
-                -2.5,
-                1.2,
-                0.0
+                -0.3741733,
+                2.6173448,
+                -1.036009
             ],
             "rotation": [
-                0.5002117,
+                -0.7071068,
                 0.0,
                 0.0,
-                0.8659031
+                0.7071067
             ],
             "scaling": [
-                0.25,
-                0.1249998,
-                0.2499998
+                0.0090909,
+                0.0090909,
+                0.0090909
             ]
         },
-        "256": {
-            "name": "animation",
+        "919": {
+            "name": "Light",
+            "parent": null,
+            "components": [
+                {
+                    "type": "light",
+                    "light": {
+                        "intensity": 2.7999999
+                    }
+                }
+            ],
+            "translation": [
+                -0.3741733,
+                2.4979598,
+                1.3892951
+            ],
+            "rotation": [
+                -0.7071068,
+                0.0,
+                0.0,
+                0.7071067
+            ],
+            "scaling": [
+                0.0090909,
+                0.0090909,
+                0.0090909
+            ]
+        },
+        "920": {
+            "name": "text",
             "components": [
                 {
                     "type": "text",
                     "text": {
-                        "text": "10.20.30"
+                        "text": "00:00:30",
+                        "effect": "none",
+                        "characterSpacing": -1.6,
+                        "justification": "middle"
                     }
                 },
                 {
@@ -1781,22 +3090,22 @@
                 }
             ],
             "translation": [
-                -0.0522212,
-                3.1542515,
-                -2.3587412
+                1.0462032,
+                1.8588637,
+                -2.6273403
             ],
             "rotation": [
-                -0.3495976,
                 0.0,
                 0.0,
-                0.9368999
+                0.0,
+                1.0
             ],
             "scaling": [
-                4.0,
-                5.2895879,
-                7.2125229
+                2.2879989,
+                2.5519998,
+                0.8799867
             ],
-            "parent": "194"
+            "parent": null
         }
     },
     "meshes": {
@@ -1934,6 +3243,996 @@
                 "name": "TeleportIndicator",
                 "file": "models\\teleport-indicator.glb"
             }
+        },
+        "543": {
+            "link": {
+                "name": "Candle_Candle_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "544": {
+            "link": {
+                "name": "Bath_Bath_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "545": {
+            "link": {
+                "name": "Bath_Bath_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "546": {
+            "link": {
+                "name": "Sink_Bathtube_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "547": {
+            "link": {
+                "name": "Sink_Bathtube_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "548": {
+            "link": {
+                "name": "Pic 1_Frames_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "549": {
+            "link": {
+                "name": "Pic 1_Frames_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "550": {
+            "link": {
+                "name": "Pic 2_Frames_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "551": {
+            "link": {
+                "name": "Pic 2_Frames_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "552": {
+            "link": {
+                "name": "Mirror_Frames_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "553": {
+            "link": {
+                "name": "Mirror_Frames_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "554": {
+            "link": {
+                "name": "Hook_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "555": {
+            "link": {
+                "name": "HookTowel_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "556": {
+            "link": {
+                "name": "HookTowel_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "557": {
+            "link": {
+                "name": "Door_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "558": {
+            "link": {
+                "name": "Door_Hinges_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "559": {
+            "link": {
+                "name": "Fabric_Towel_folded2_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "560": {
+            "link": {
+                "name": "Fabric_Towel_folded2_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "561": {
+            "link": {
+                "name": "Fabric_Towel_folded_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "562": {
+            "link": {
+                "name": "Fabric_Towel_folded_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "563": {
+            "link": {
+                "name": "Fabric_Sponge_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "564": {
+            "link": {
+                "name": "Fabric_Sponge_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "565": {
+            "link": {
+                "name": "Curtain_flat_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "566": {
+            "link": {
+                "name": "Fabric_ Towel_Bath_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "567": {
+            "link": {
+                "name": "Fabric_ Towel_Bath_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "568": {
+            "link": {
+                "name": "Fabric_Carpet_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "569": {
+            "link": {
+                "name": "Fabric_Carpet_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "570": {
+            "link": {
+                "name": "Fabric_Carpet Small_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "571": {
+            "link": {
+                "name": "Fabric_Carpet Small_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "572": {
+            "link": {
+                "name": "Floor tile_Floor_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "573": {
+            "link": {
+                "name": "Floor tile_Floor_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "574": {
+            "link": {
+                "name": "Selling_holder_Big_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "575": {
+            "link": {
+                "name": "Selling_holder_Big_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "576": {
+            "link": {
+                "name": "Selling_holder_Small_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "577": {
+            "link": {
+                "name": "Selling_holder_Small_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "578": {
+            "link": {
+                "name": "Selling_top_Selling_Bump_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "579": {
+            "link": {
+                "name": "Selling_top_Selling_Bump_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "580": {
+            "link": {
+                "name": "Wall_corner_shelf_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "581": {
+            "link": {
+                "name": "Wall_corner_shelf_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "582": {
+            "link": {
+                "name": "Wall_corner_shelf_Glass_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "583": {
+            "link": {
+                "name": "Wall_Doorway_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "584": {
+            "link": {
+                "name": "Wall_Doorway_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "585": {
+            "link": {
+                "name": "Wall_Doorway_Door_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "586": {
+            "link": {
+                "name": "Wall_Doorway_Door_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "587": {
+            "link": {
+                "name": "Wall_Window_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "588": {
+            "link": {
+                "name": "Wall_Window_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "589": {
+            "link": {
+                "name": "Wall_Window_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "590": {
+            "link": {
+                "name": "Wall_Clear_long_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "591": {
+            "link": {
+                "name": "Wall_Clear_long_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "592": {
+            "link": {
+                "name": "Wall_Clear_Short_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "593": {
+            "link": {
+                "name": "Wall_Clear_Short_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "594": {
+            "link": {
+                "name": "Wall_Dam1_long_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "595": {
+            "link": {
+                "name": "Wall_Dam1_long_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "596": {
+            "link": {
+                "name": "Cap_Can_1_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "597": {
+            "link": {
+                "name": "Cup_Can_2_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "598": {
+            "link": {
+                "name": "Cup_Ceramic_1_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "599": {
+            "link": {
+                "name": "Cup_Ceramic_2_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "600": {
+            "link": {
+                "name": "Cup_Ceramic_3_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "601": {
+            "link": {
+                "name": "Cup_Ceramic_4_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "602": {
+            "link": {
+                "name": "Cup_Ceramic_5_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "603": {
+            "link": {
+                "name": "Cup_glass_1_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "604": {
+            "link": {
+                "name": "Cup_glass_2_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "605": {
+            "link": {
+                "name": "Cup_sanitazer_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "606": {
+            "link": {
+                "name": "Wall_Corner_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "607": {
+            "link": {
+                "name": "Wall_Corner_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "608": {
+            "link": {
+                "name": "Candle.001_Candle_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "609": {
+            "link": {
+                "name": "Bath.001_Bath_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "610": {
+            "link": {
+                "name": "Bath.001_Bath_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "611": {
+            "link": {
+                "name": "Sink.001_Bathtube_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "612": {
+            "link": {
+                "name": "Sink.001_Bathtube_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "613": {
+            "link": {
+                "name": "Pic 1.001_Frames_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "614": {
+            "link": {
+                "name": "Pic 1.001_Frames_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "615": {
+            "link": {
+                "name": "Pic 2.001_Frames_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "616": {
+            "link": {
+                "name": "Pic 2.001_Frames_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "617": {
+            "link": {
+                "name": "Mirror.001_Frames_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "618": {
+            "link": {
+                "name": "Mirror.001_Frames_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "619": {
+            "link": {
+                "name": "Hook.001_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "620": {
+            "link": {
+                "name": "HookTowel.001_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "621": {
+            "link": {
+                "name": "HookTowel.001_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "622": {
+            "link": {
+                "name": "Door.001_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "623": {
+            "link": {
+                "name": "Door_Hinges.001_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "624": {
+            "link": {
+                "name": "Fabric_Towel_folded2.001_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "625": {
+            "link": {
+                "name": "Fabric_Towel_folded2.001_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "626": {
+            "link": {
+                "name": "Fabric_Towel_folded.001_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "627": {
+            "link": {
+                "name": "Fabric_Towel_folded.001_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "628": {
+            "link": {
+                "name": "Fabric_Sponge.001_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "629": {
+            "link": {
+                "name": "Fabric_Sponge.001_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "630": {
+            "link": {
+                "name": "Curtain_flat.001_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "631": {
+            "link": {
+                "name": "Fabric_ Towel_Bath.001_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "632": {
+            "link": {
+                "name": "Fabric_ Towel_Bath.001_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "633": {
+            "link": {
+                "name": "Fabric_Carpet.001_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "634": {
+            "link": {
+                "name": "Fabric_Carpet.001_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "635": {
+            "link": {
+                "name": "Fabric_Carpet Small.001_Fabric_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "636": {
+            "link": {
+                "name": "Fabric_Carpet Small.001_Fabric_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "637": {
+            "link": {
+                "name": "Floor tile.001_Floor_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "638": {
+            "link": {
+                "name": "Floor tile.001_Floor_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "639": {
+            "link": {
+                "name": "Selling_holder_Big.001_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "640": {
+            "link": {
+                "name": "Selling_holder_Big.001_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "641": {
+            "link": {
+                "name": "Selling_holder_Small.001_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "642": {
+            "link": {
+                "name": "Selling_holder_Small.001_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "643": {
+            "link": {
+                "name": "Selling_top.001_Selling_Bump_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "644": {
+            "link": {
+                "name": "Selling_top.001_Selling_Bump_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "645": {
+            "link": {
+                "name": "Wall_corner_shelf.001_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "646": {
+            "link": {
+                "name": "Wall_corner_shelf.001_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "647": {
+            "link": {
+                "name": "Wall_corner_shelf.001_Glass_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "648": {
+            "link": {
+                "name": "Wall_Doorway_Door.001_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "649": {
+            "link": {
+                "name": "Wall_Doorway_Door.001_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "650": {
+            "link": {
+                "name": "Wall_Window.001_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "651": {
+            "link": {
+                "name": "Wall_Window.001_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "652": {
+            "link": {
+                "name": "Wall_Window.001_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "653": {
+            "link": {
+                "name": "Wall_Clear_long.001_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "654": {
+            "link": {
+                "name": "Wall_Clear_long.001_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "655": {
+            "link": {
+                "name": "Wall_Dam1_long.001_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "656": {
+            "link": {
+                "name": "Wall_Dam1_long.001_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "657": {
+            "link": {
+                "name": "Cap_Can_1.001_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "658": {
+            "link": {
+                "name": "Cup_Can_2.001_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "659": {
+            "link": {
+                "name": "Cup_Ceramic_1.001_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "660": {
+            "link": {
+                "name": "Cup_Ceramic_2.001_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "661": {
+            "link": {
+                "name": "Cup_Ceramic_3.001_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "662": {
+            "link": {
+                "name": "Cup_Ceramic_4.001_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "663": {
+            "link": {
+                "name": "Cup_Ceramic_5.001_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "664": {
+            "link": {
+                "name": "Cup_glass_1.001_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "665": {
+            "link": {
+                "name": "Cup_glass_2.001_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "666": {
+            "link": {
+                "name": "Cup_sanitazer.001_Cups_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "667": {
+            "link": {
+                "name": "Wall_Corner.001_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "668": {
+            "link": {
+                "name": "Wall_Corner.001_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "669": {
+            "link": {
+                "name": "Wall_Clear_Short.002_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "670": {
+            "link": {
+                "name": "Wall_Clear_Short.002_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "671": {
+            "link": {
+                "name": "Wall_Window.002_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "672": {
+            "link": {
+                "name": "Wall_Window.002_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "673": {
+            "link": {
+                "name": "Wall_Window.002_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "674": {
+            "link": {
+                "name": "Wall_Corner.002_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "675": {
+            "link": {
+                "name": "Wall_Corner.002_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "676": {
+            "link": {
+                "name": "Sink.002_Bathtube_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "677": {
+            "link": {
+                "name": "Sink.002_Bathtube_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "678": {
+            "link": {
+                "name": "Hook.002_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "679": {
+            "link": {
+                "name": "Hook.003_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "680": {
+            "link": {
+                "name": "Wall_Window.003_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "681": {
+            "link": {
+                "name": "Wall_Window.003_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "682": {
+            "link": {
+                "name": "Wall_Window.003_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "683": {
+            "link": {
+                "name": "Wall_Clear_long.002_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "684": {
+            "link": {
+                "name": "Wall_Clear_long.002_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "685": {
+            "link": {
+                "name": "Wall_Doorway_Door.002_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "686": {
+            "link": {
+                "name": "Wall_Doorway_Door.002_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "687": {
+            "link": {
+                "name": "Wall_Corner.004_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "688": {
+            "link": {
+                "name": "Wall_Corner.004_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "689": {
+            "link": {
+                "name": "Curtain_flat.002_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "690": {
+            "link": {
+                "name": "Wall_Clear_Short.001_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "691": {
+            "link": {
+                "name": "Wall_Clear_Short.001_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "692": {
+            "link": {
+                "name": "Wall_Clear_Short.003_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "693": {
+            "link": {
+                "name": "Wall_Clear_Short.003_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "694": {
+            "link": {
+                "name": "Candle.002_Candle_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "695": {
+            "link": {
+                "name": "Hook.004_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "696": {
+            "link": {
+                "name": "Candle.003_Candle_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "697": {
+            "link": {
+                "name": "Hook.005_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "698": {
+            "link": {
+                "name": "Candle.004_Candle_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "699": {
+            "link": {
+                "name": "Hook.006_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "700": {
+            "link": {
+                "name": "Candle.005_Candle_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "701": {
+            "link": {
+                "name": "Hook.007_Door and windows_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "702": {
+            "link": {
+                "name": "Selling_holder_Big.002_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "703": {
+            "link": {
+                "name": "Selling_holder_Big.002_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "704": {
+            "link": {
+                "name": "Selling_holder_Small.002_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "705": {
+            "link": {
+                "name": "Selling_holder_Small.002_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "706": {
+            "link": {
+                "name": "Wall_Clear_Short.004_Wall_Trim_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "707": {
+            "link": {
+                "name": "Wall_Clear_Short.004_Wall_Trim_0-uv1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
         }
     },
     "textures": {
@@ -1959,6 +4258,198 @@
             "link": {
                 "name": "texture_1",
                 "file": "models\\oculus-touch-v2-right.glb"
+            }
+        },
+        "500": {
+            "link": {
+                "name": "texture_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "501": {
+            "link": {
+                "name": "texture_1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "502": {
+            "link": {
+                "name": "texture_2",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "503": {
+            "link": {
+                "name": "texture_3",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "504": {
+            "link": {
+                "name": "texture_4",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "505": {
+            "link": {
+                "name": "texture_5",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "506": {
+            "link": {
+                "name": "texture_6",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "507": {
+            "link": {
+                "name": "texture_7",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "508": {
+            "link": {
+                "name": "texture_8",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "509": {
+            "link": {
+                "name": "texture_9",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "510": {
+            "link": {
+                "name": "texture_10",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "511": {
+            "link": {
+                "name": "texture_11",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "512": {
+            "link": {
+                "name": "texture_12",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "513": {
+            "link": {
+                "name": "texture_13",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "514": {
+            "link": {
+                "name": "texture_14",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "515": {
+            "link": {
+                "name": "texture_15",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "516": {
+            "link": {
+                "name": "texture_16",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "517": {
+            "link": {
+                "name": "texture_17",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "518": {
+            "link": {
+                "name": "texture_18",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "519": {
+            "link": {
+                "name": "texture_19",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "520": {
+            "link": {
+                "name": "texture_20",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "521": {
+            "link": {
+                "name": "texture_21",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "522": {
+            "link": {
+                "name": "texture_22",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "523": {
+            "link": {
+                "name": "texture_23",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "524": {
+            "link": {
+                "name": "texture_24",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "525": {
+            "link": {
+                "name": "texture_25",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "526": {
+            "link": {
+                "name": "texture_26",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "527": {
+            "link": {
+                "name": "texture_27",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "528": {
+            "link": {
+                "name": "texture_28",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "529": {
+            "link": {
+                "name": "texture_29",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "530": {
+            "link": {
+                "name": "texture_30",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "531": {
+            "link": {
+                "name": "texture_31",
+                "file": "Assets\\the_bathroom_free.glb"
             }
         }
     },
@@ -2002,6 +4493,198 @@
                 256,
                 256
             ]
+        },
+        "468": {
+            "link": {
+                "name": "image_0",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "469": {
+            "link": {
+                "name": "image_1",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "470": {
+            "link": {
+                "name": "image_2",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "471": {
+            "link": {
+                "name": "image_3",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "472": {
+            "link": {
+                "name": "image_4",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "473": {
+            "link": {
+                "name": "image_5",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "474": {
+            "link": {
+                "name": "image_6",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "475": {
+            "link": {
+                "name": "image_7",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "476": {
+            "link": {
+                "name": "image_8",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "477": {
+            "link": {
+                "name": "image_9",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "478": {
+            "link": {
+                "name": "image_10",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "479": {
+            "link": {
+                "name": "image_11",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "480": {
+            "link": {
+                "name": "image_12",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "481": {
+            "link": {
+                "name": "image_13",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "482": {
+            "link": {
+                "name": "image_14",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "483": {
+            "link": {
+                "name": "image_15",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "484": {
+            "link": {
+                "name": "image_16",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "485": {
+            "link": {
+                "name": "image_17",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "486": {
+            "link": {
+                "name": "image_18",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "487": {
+            "link": {
+                "name": "image_19",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "488": {
+            "link": {
+                "name": "image_20",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "489": {
+            "link": {
+                "name": "image_21",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "490": {
+            "link": {
+                "name": "image_22",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "491": {
+            "link": {
+                "name": "image_23",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "492": {
+            "link": {
+                "name": "image_24",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "493": {
+            "link": {
+                "name": "image_25",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "494": {
+            "link": {
+                "name": "image_26",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "495": {
+            "link": {
+                "name": "image_27",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "496": {
+            "link": {
+                "name": "image_28",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "497": {
+            "link": {
+                "name": "image_29",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "498": {
+            "link": {
+                "name": "image_30",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "499": {
+            "link": {
+                "name": "image_31",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
         }
     },
     "materials": {
@@ -2230,6 +4913,72 @@
                     0.8392072,
                     1.0
                 ]
+            }
+        },
+        "532": {
+            "link": {
+                "name": "Candle",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "533": {
+            "link": {
+                "name": "Bath",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "534": {
+            "link": {
+                "name": "Bathtube",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "535": {
+            "link": {
+                "name": "Frames",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "536": {
+            "link": {
+                "name": "Door_and_windows",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "537": {
+            "link": {
+                "name": "Fabric",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "538": {
+            "link": {
+                "name": "Floor",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "539": {
+            "link": {
+                "name": "Wall_Trim",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "540": {
+            "link": {
+                "name": "Selling_Bump",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "541": {
+            "link": {
+                "name": "Glass",
+                "file": "Assets\\the_bathroom_free.glb"
+            }
+        },
+        "542": {
+            "link": {
+                "name": "Cups",
+                "file": "Assets\\the_bathroom_free.glb"
             }
         }
     },
@@ -2683,6 +5432,10 @@
         },
         "255": {
             "fileName": "models/teleport-indicator.glb",
+            "importerName": ""
+        },
+        "917": {
+            "fileName": "Assets/the_bathroom_free.glb",
             "importerName": ""
         }
     },
