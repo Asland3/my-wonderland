@@ -1,0 +1,65 @@
+import { CursorTarget } from "@wonderlandengine/components";
+import { Component, MeshComponent, Property } from "@wonderlandengine/api";
+
+export class ClearButton extends Component {
+  static TypeName = "ClearButton";
+
+  static Properties = {
+    /** Object that has the button's mesh attached */
+    buttonMeshObject: Property.object(),
+    /** Material to apply when the user hovers the button */
+    hoverMaterial: Property.material(),
+    /** The text object to clear */
+    textobject: Property.object(),
+  };
+
+  start() {
+    this.mesh = this.buttonMeshObject.getComponent(MeshComponent);
+    this.defaultMaterial = this.mesh.material;
+    this.buttonMeshObject.getTranslationLocal(this.returnPos);
+
+    this.target =
+      this.object.getComponent(CursorTarget) ||
+      this.object.addComponent(CursorTarget);
+  }
+
+  onActivate() {
+    this.target.onHover.add(this.onHover);
+    this.target.onUnhover.add(this.onUnhover);
+    this.target.onClick.add(this.onClick);
+  }
+
+  onDeactivate() {
+    this.target.onHover.remove(this.onHover);
+    this.target.onUnhover.remove(this.onUnhover);
+    this.target.onClick.remove(this.onClick);
+  }
+
+  /* Called by 'cursor-target' */
+  onHover = (_, cursor) => {
+    this.mesh.material = this.hoverMaterial;
+    hapticFeedback(cursor.object, 0.5, 50);
+  };
+
+  /* Called by 'cursor-target' */
+  onClick = (_, cursor) => {
+    console.log("clicked");
+
+    // Get the TextComponent from the text object
+    const textComponent = this.textobject.getComponent("text");
+
+    // If the TextComponent exists
+    if (textComponent) {
+      // Clear the text
+      textComponent.text = "";
+    }
+
+    hapticFeedback(cursor.object, 1.0, 20);
+  };
+
+  /* Called by 'cursor-target' */
+  onUnhover = (_, cursor) => {
+    this.mesh.material = this.defaultMaterial;
+    hapticFeedback(cursor.object, 0.3, 50);
+  };
+}

@@ -24,7 +24,10 @@ import {TeleportComponent} from '@wonderlandengine/components';
 import {VrModeActiveSwitch} from '@wonderlandengine/components';
 import {WasdControlsComponent} from '@wonderlandengine/components';
 import {Book} from './book.js';
+import {ClearButton} from './clearbutton.js';
 import {Countdown} from './countdown.js';
+import {EnterButton} from './enterbutton.js';
+import {NumberButton} from './numberbutton.js';
 import {Secret} from './secret.js';
 /* wle:auto-imports:end */
 
@@ -101,7 +104,10 @@ engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
 engine.registerComponent(WasdControlsComponent);
 engine.registerComponent(Book);
+engine.registerComponent(ClearButton);
 engine.registerComponent(Countdown);
+engine.registerComponent(EnterButton);
+engine.registerComponent(NumberButton);
 engine.registerComponent(Secret);
 /* wle:auto-register:end */
 

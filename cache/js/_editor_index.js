@@ -4,7 +4,13 @@ import * as _C__Users_nicol_source_repos_php_my_wonderland_js_book_js from 'C:/U
 _registerEditor(_C__Users_nicol_source_repos_php_my_wonderland_js_book_js);
 import * as _C__Users_nicol_source_repos_php_my_wonderland_js_button_js from 'C:/Users/nicol/source/repos/php/my-wonderland/js/button.js';
 _registerEditor(_C__Users_nicol_source_repos_php_my_wonderland_js_button_js);
+import * as _C__Users_nicol_source_repos_php_my_wonderland_js_clearbutton_js from 'C:/Users/nicol/source/repos/php/my-wonderland/js/clearbutton.js';
+_registerEditor(_C__Users_nicol_source_repos_php_my_wonderland_js_clearbutton_js);
 import * as _C__Users_nicol_source_repos_php_my_wonderland_js_countdown_js from 'C:/Users/nicol/source/repos/php/my-wonderland/js/countdown.js';
 _registerEditor(_C__Users_nicol_source_repos_php_my_wonderland_js_countdown_js);
+import * as _C__Users_nicol_source_repos_php_my_wonderland_js_enterbutton_js from 'C:/Users/nicol/source/repos/php/my-wonderland/js/enterbutton.js';
+_registerEditor(_C__Users_nicol_source_repos_php_my_wonderland_js_enterbutton_js);
+import * as _C__Users_nicol_source_repos_php_my_wonderland_js_numberbutton_js from 'C:/Users/nicol/source/repos/php/my-wonderland/js/numberbutton.js';
+_registerEditor(_C__Users_nicol_source_repos_php_my_wonderland_js_numberbutton_js);
 import * as _C__Users_nicol_source_repos_php_my_wonderland_js_secret_js from 'C:/Users/nicol/source/repos/php/my-wonderland/js/secret.js';
 _registerEditor(_C__Users_nicol_source_repos_php_my_wonderland_js_secret_js);
