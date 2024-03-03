@@ -4136,10 +4136,10 @@
                 {
                     "type": "NumberButton",
                     "NumberButton": {
-                        "buttonMeshObject": "1199",
+                        "buttonMeshObject": "1309",
                         "hoverMaterial": "26",
                         "stringToAdd": "8",
-                        "textobject": "1259"
+                        "textobject": "1332"
                     }
                 }
             ],
@@ -4192,10 +4192,10 @@
                 {
                     "type": "NumberButton",
                     "NumberButton": {
-                        "buttonMeshObject": "1201",
+                        "buttonMeshObject": "1311",
                         "stringToAdd": "9",
                         "hoverMaterial": "26",
-                        "textobject": "1259"
+                        "textobject": "1332"
                     }
                 }
             ],
@@ -4246,10 +4246,10 @@
                 {
                     "type": "NumberButton",
                     "NumberButton": {
-                        "buttonMeshObject": "1203",
+                        "buttonMeshObject": "1313",
                         "hoverMaterial": "26",
                         "stringToAdd": "7",
-                        "textobject": "1259"
+                        "textobject": "1332"
                     }
                 }
             ]
@@ -4284,10 +4284,10 @@
                 {
                     "type": "NumberButton",
                     "NumberButton": {
-                        "buttonMeshObject": "1205",
+                        "buttonMeshObject": "1315",
                         "hoverMaterial": "26",
                         "stringToAdd": "4",
-                        "textobject": "1259"
+                        "textobject": "1332"
                     }
                 }
             ]
@@ -4331,9 +4331,9 @@
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                0.0
+                -0.0000021,
+                -0.0,
+                -0.000122
             ],
             "rotation": [
                 0.0,
@@ -4342,9 +4342,9 @@
                 1.0
             ],
             "scaling": [
-                1.0299999,
-                0.9300002,
-                0.9300002
+                1.0299998,
+                0.9300001,
+                0.9300001
             ]
         },
         "1318": {
@@ -4377,10 +4377,10 @@
                 {
                     "type": "NumberButton",
                     "NumberButton": {
-                        "buttonMeshObject": "1209",
+                        "buttonMeshObject": "1319",
                         "hoverMaterial": "26",
                         "stringToAdd": "3",
-                        "textobject": "1259"
+                        "textobject": "1332"
                     }
                 }
             ],
@@ -4431,10 +4431,10 @@
                 {
                     "type": "NumberButton",
                     "NumberButton": {
-                        "buttonMeshObject": "1211",
+                        "buttonMeshObject": "1321",
                         "hoverMaterial": "26",
                         "stringToAdd": "2",
-                        "textobject": "1259"
+                        "textobject": "1332"
                     }
                 }
             ]
@@ -4469,10 +4469,10 @@
                 {
                     "type": "NumberButton",
                     "NumberButton": {
-                        "buttonMeshObject": "1213",
+                        "buttonMeshObject": "1323",
                         "hoverMaterial": "26",
                         "stringToAdd": "5",
-                        "textobject": "1259"
+                        "textobject": "1332"
                     }
                 }
             ]
@@ -4507,10 +4507,10 @@
                 {
                     "type": "NumberButton",
                     "NumberButton": {
-                        "buttonMeshObject": "1215",
+                        "buttonMeshObject": "1325",
                         "hoverMaterial": "26",
                         "stringToAdd": "6",
-                        "textobject": "1259"
+                        "textobject": "1332"
                     }
                 }
             ]
@@ -4549,9 +4549,9 @@
                 {
                     "type": "ClearButton",
                     "ClearButton": {
-                        "buttonMeshObject": "1219",
+                        "buttonMeshObject": "1327",
                         "hoverMaterial": "1133",
-                        "textobject": "1259"
+                        "textobject": "1332"
                     }
                 }
             ]
@@ -4586,10 +4586,10 @@
                 {
                     "type": "NumberButton",
                     "NumberButton": {
-                        "buttonMeshObject": "1221",
+                        "buttonMeshObject": "1329",
                         "hoverMaterial": "26",
                         "stringToAdd": "0",
-                        "textobject": "1259"
+                        "textobject": "1332"
                     }
                 }
             ]
@@ -4830,42 +4830,14 @@
                 {
                     "type": "EnterButton",
                     "EnterButton": {
-                        "buttonMeshObject": "1217",
+                        "buttonMeshObject": "1356",
                         "hoverMaterial": "26",
-                        "textobject": "1259",
+                        "textobject": "1332",
                         "blackScreenObject": "1268",
                         "textobject2": "1252"
                     }
                 }
             ]
-        },
-        "1357": {
-            "name": "DoorText",
-            "components": [
-                {
-                    "type": "text",
-                    "text": {
-                        "text": "Locked..."
-                    }
-                }
-            ],
-            "translation": [
-                -0.7925656,
-                -0.0866103,
-                1.3688781
-            ],
-            "rotation": [
-                0.7070527,
-                0.0017372,
-                0.0017372,
-                0.7071565
-            ],
-            "scaling": [
-                1.000036,
-                1.0000225,
-                1.0000243
-            ],
-            "parent": "1303"
         },
         "1252": {
             "name": "Locked-Text",
