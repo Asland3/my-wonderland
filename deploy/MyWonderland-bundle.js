@@ -15453,6 +15453,66 @@ __publicField(WasdControlsComponent, "Properties", {
   headObject: { type: Type.Object }
 });
 
+// js/book.js
+function hapticFeedback(object, strength, duration) {
+  const input = object.getComponent(InputComponent);
+  if (input && input.xrInputSource) {
+    const gamepad = input.xrInputSource.gamepad;
+    if (gamepad && gamepad.hapticActuators)
+      gamepad.hapticActuators[0].pulse(strength, duration);
+  }
+}
+var Book = class extends Component {
+  static onRegister(engine2) {
+    engine2.registerComponent(CursorTarget);
+  }
+  start() {
+    this.mesh = this.buttonMeshObject.getComponent(MeshComponent);
+    this.defaultMaterial = this.mesh.material;
+    this.buttonMeshObject.getTranslationLocal(this.returnPos);
+    this.target = this.object.getComponent(CursorTarget) || this.object.addComponent(CursorTarget);
+    this.panelMeshObject.active = false;
+    this.textobject.active = false;
+  }
+  onActivate() {
+    this.target.onHover.add(this.onHover);
+    this.target.onUnhover.add(this.onUnhover);
+    this.target.onClick.add(this.onClick);
+  }
+  onDeactivate() {
+    this.target.onHover.remove(this.onHover);
+    this.target.onUnhover.remove(this.onUnhover);
+    this.target.onClick.remove(this.onClick);
+  }
+  /* Called by 'cursor-target' */
+  onHover = (_, cursor) => {
+    this.mesh.material = this.hoverMaterial;
+    hapticFeedback(cursor.object, 0.5, 50);
+  };
+  /* Called by 'cursor-target' */
+  onClick = (_, cursor) => {
+    this.panelMeshObject.active = true;
+    this.textobject.active = true;
+    hapticFeedback(cursor.object, 1, 20);
+  };
+  /* Called by 'cursor-target' */
+  onUnhover = (_, cursor) => {
+    this.mesh.material = this.defaultMaterial;
+    hapticFeedback(cursor.object, 0.3, 50);
+  };
+};
+__publicField(Book, "TypeName", "book");
+/* Properties that are configurable in the editor */
+__publicField(Book, "Properties", {
+  /** Object that has the button's mesh attached */
+  buttonMeshObject: Property.object(),
+  /** Material to apply when the user hovers the button */
+  hoverMaterial: Property.material(),
+  /** Object that has the panel's mesh attached */
+  panelMeshObject: Property.object(),
+  textobject: Property.object()
+});
+
 // js/countdown.js
 var Countdown = class extends Component {
   start() {
@@ -15532,6 +15592,7 @@ if (document.readyState === "loading") {
   setupButtonsXR();
 }
 engine.registerComponent(Cursor);
+engine.registerComponent(CursorTarget);
 engine.registerComponent(FingerCursor);
 engine.registerComponent(HandTracking);
 engine.registerComponent(HowlerAudioListener);
@@ -15540,6 +15601,7 @@ engine.registerComponent(PlayerHeight);
 engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
 engine.registerComponent(WasdControlsComponent);
+engine.registerComponent(Book);
 engine.registerComponent(Countdown);
 engine.scene.load(`${Constants.ProjectName}.bin`).catch((e) => {
   console.error(e);

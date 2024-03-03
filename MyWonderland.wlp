@@ -2703,7 +2703,7 @@
             "components": [
                 {
                     "mesh": {
-                        "material": "22"
+                        "material": "25"
                     }
                 }
             ],
@@ -2743,6 +2743,22 @@
                         "material": "26"
                     }
                 }
+            ],
+            "translation": [
+                -0.2708418,
+                -0.4075719,
+                0.0413488
+            ],
+            "rotation": [
+                1.2712555985672225e-7,
+                -0.0,
+                0.0000066,
+                1.0
+            ],
+            "scaling": [
+                1.0400935,
+                1.0400935,
+                0.9182732
             ]
         },
         "859": {
@@ -3316,29 +3332,29 @@
                 "name": "Cup_Ceramic_5.001_Cups_0<Cup_Ceramic_5.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
                 "file": "Assets\\the_bathroom_free.glb"
             },
-            "parent": "858",
+            "parent": "710",
             "components": [
                 {
                     "mesh": {
-                        "material": "26"
+                        "material": "22"
                     }
                 }
             ],
             "translation": [
-                -0.3116663,
-                -0.2054637,
-                -0.0
+                274.6325683,
+                102.9148941,
+                12.9228668
             ],
             "rotation": [
-                0.0,
-                -0.0,
-                0.0000014,
-                1.0
+                0.2362642,
+                0.6664676,
+                0.6664677,
+                -0.2362642
             ],
             "scaling": [
-                1.0,
-                1.0,
-                1.0
+                104.0093612,
+                104.0093612,
+                91.8273315
             ]
         },
         "1116": {
@@ -3418,7 +3434,8 @@
                 {
                     "mesh": {
                         "material": "540"
-                    }
+                    },
+                    "active": true
                 },
                 {
                     "mesh": {
@@ -3466,15 +3483,41 @@
                 -0.8883585
             ],
             "rotation": [
-                -4.348211746219022e-8,
+                -4.3482117462190224e-8,
                 -0.6839712,
-                -7.787841838080567e-8,
+                -7.787841838080568e-8,
                 0.7295089
             ],
             "scaling": [
                 0.1703075,
                 0.1703073,
                 0.1703075
+            ],
+            "components": [
+                {
+                    "type": "mesh"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.1
+                        },
+                        "collider": "sphere"
+                    }
+                },
+                {
+                    "type": "book",
+                    "book": {
+                        "buttonMeshObject": "1122",
+                        "hoverMaterial": "26",
+                        "panelMeshObject": "1256",
+                        "textobject": "1258"
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                }
             ]
         },
         "1193": {
@@ -3927,15 +3970,62 @@
                 2.1646316
             ],
             "rotation": [
-                -7.549790836947068e-8,
+                -7.549790836947069e-8,
                 1.0,
-                -7.549790836947068e-8,
+                -7.549790836947069e-8,
                 -4.371138118131057e-8
             ],
             "scaling": [
                 1.0,
                 1.0,
                 1.0
+            ]
+        },
+        "1256": {
+            "name": "inScreenPanel",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "202"
+                    }
+                }
+            ],
+            "translation": [
+                -2.1426239,
+                1.764981,
+                -0.9221721
+            ],
+            "rotation": [
+                5.821220838697627e-8,
+                0.7071014,
+                9.235528608542155e-8,
+                0.707112
+            ],
+            "scaling": [
+                0.5520998,
+                0.5203001,
+                0.0008599
+            ]
+        },
+        "1258": {
+            "name": "Text",
+            "parent": "1256",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "Jeg er ikke en drink, men jeg deler mit navn med en.\nJeg er ikke i regnbuen, men jeg er stadig sjov.\nJeg er ikke rød, jeg er ikke hvid,\nMen en blanding af begge, lige så lys.\nHvad er jeg?\n",
+                        "lineSpacing": 1.7,
+                        "characterSpacing": 0.0
+                    }
+                }
+            ],
+            "scaling": [
+                0.6999999,
+                1.2,
+                0.001
             ]
         }
     },
@@ -6109,9 +6199,9 @@
             "name": "Pink",
             "Phong": {
                 "diffuseColor": [
-                    0.9098039,
+                    1.0,
                     0.0,
-                    0.5411764,
+                    0.5948276,
                     1.0
                 ],
                 "specularColor": [
