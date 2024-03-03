@@ -15568,6 +15568,13 @@ var Countdown = class extends Component {
     if (textComponent) {
       textComponent.text = this.formatTime(this.param);
     }
+    this.soundClick = this.object.addComponent(HowlerAudioSource, {
+      src: "sfx/spookyMystery.mp3",
+      autoplay: true,
+      loop: true,
+      volume: 0.3
+    });
+    this.soundClick.play();
   }
   update(deltaTime) {
     this.param -= deltaTime;
