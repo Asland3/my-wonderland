@@ -17,6 +17,7 @@ import {CursorTarget} from '@wonderlandengine/components';
 import {FingerCursor} from '@wonderlandengine/components';
 import {HandTracking} from '@wonderlandengine/components';
 import {HowlerAudioListener} from '@wonderlandengine/components';
+import {HowlerAudioSource} from '@wonderlandengine/components';
 import {MouseLookComponent} from '@wonderlandengine/components';
 import {PlayerHeight} from '@wonderlandengine/components';
 import {TeleportComponent} from '@wonderlandengine/components';
@@ -24,6 +25,7 @@ import {VrModeActiveSwitch} from '@wonderlandengine/components';
 import {WasdControlsComponent} from '@wonderlandengine/components';
 import {Book} from './book.js';
 import {Countdown} from './countdown.js';
+import {Secret} from './secret.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -92,6 +94,7 @@ engine.registerComponent(CursorTarget);
 engine.registerComponent(FingerCursor);
 engine.registerComponent(HandTracking);
 engine.registerComponent(HowlerAudioListener);
+engine.registerComponent(HowlerAudioSource);
 engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
 engine.registerComponent(TeleportComponent);
@@ -99,6 +102,7 @@ engine.registerComponent(VrModeActiveSwitch);
 engine.registerComponent(WasdControlsComponent);
 engine.registerComponent(Book);
 engine.registerComponent(Countdown);
+engine.registerComponent(Secret);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`).catch((e) => {

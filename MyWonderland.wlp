@@ -26,6 +26,21 @@
                         "lockY": false,
                         "speed": 0.05
                     }
+                },
+                {
+                    "type": "howler-audio-source",
+                    "howler-audio-source": {
+                        "src": "audio/spookyMystery.mp3",
+                        "autoplay": true,
+                        "loop": true,
+                        "spatial": false
+                    }
+                },
+                {
+                    "type": "howler-audio-listener",
+                    "howler-audio-listener": {
+                        "spatial": false
+                    }
                 }
             ]
         },
@@ -2640,9 +2655,25 @@
             "components": [
                 {
                     "mesh": {
-                        "material": "22"
+                        "material": "1035"
                     }
                 }
+            ],
+            "translation": [
+                -0.0000143,
+                0.0399582,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
             ]
         },
         "851": {
@@ -2661,9 +2692,25 @@
             "components": [
                 {
                     "mesh": {
-                        "material": "22"
+                        "material": "1133"
                     }
                 }
+            ],
+            "translation": [
+                -0.3106242,
+                -0.0155575,
+                -0.5430785
+            ],
+            "rotation": [
+                -0.0,
+                -0.0,
+                -0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                0.7961875
             ]
         },
         "853": {
@@ -2682,9 +2729,25 @@
             "components": [
                 {
                     "mesh": {
-                        "material": "26"
+                        "material": "930"
                     }
                 }
+            ],
+            "translation": [
+                0.0328105,
+                -0.0,
+                0.0075178
+            ],
+            "rotation": [
+                -0.0,
+                -0.0,
+                -0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
             ]
         },
         "855": {
@@ -2708,19 +2771,19 @@
                 }
             ],
             "translation": [
-                0.0060863,
-                -0.0121721,
-                -0.0
+                -0.0177195,
+                0.0355842,
+                -2.3814949656753018e-7
             ],
             "rotation": [
-                0.0,
-                0.0,
-                -0.0,
-                1.0
+                6.258272833292723e-8,
+                2.7114591460986048e-8,
+                -0.1897085,
+                0.9818404
             ],
             "scaling": [
-                1.0,
-                1.0,
+                0.9999995,
+                0.9999995,
                 1.0
             ]
         },
@@ -2745,20 +2808,20 @@
                 }
             ],
             "translation": [
-                -0.2708418,
-                -0.4075719,
-                0.0413488
+                -0.3328899,
+                -0.3571322,
+                0.0413491
             ],
             "rotation": [
-                1.2712555985672225e-7,
-                -0.0,
-                0.0000066,
-                1.0
+                3.0064484235481366e-8,
+                -1.7580964595254045e-7,
+                0.5960162,
+                0.8029723
             ],
             "scaling": [
-                1.0400935,
-                1.0400935,
-                0.9182732
+                1.0400941,
+                1.0400941,
+                1.2517745
             ]
         },
         "859": {
@@ -2780,6 +2843,22 @@
                         "material": "26"
                     }
                 }
+            ],
+            "translation": [
+                0.0146827,
+                -0.0,
+                -0.0000015
+            ],
+            "rotation": [
+                -0.0,
+                -0.0,
+                -0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
             ]
         },
         "861": {
@@ -3186,9 +3265,9 @@
                 }
             ],
             "translation": [
-                -0.3741733,
-                2.6173448,
-                -1.036009
+                -0.3741732,
+                2.4978449,
+                -1.036005
             ],
             "rotation": [
                 -0.7071068,
@@ -3198,8 +3277,8 @@
             ],
             "scaling": [
                 0.0090909,
-                0.0090909,
-                0.0090909
+                0.0090908,
+                0.0090908
             ]
         },
         "919": {
@@ -3272,29 +3351,29 @@
                 "name": "Cup_Ceramic_3.001_Cups_0<Cup_Ceramic_3.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
                 "file": "Assets\\the_bathroom_free.glb"
             },
-            "parent": "854",
+            "parent": "710",
             "components": [
                 {
                     "mesh": {
-                        "material": "22"
+                        "material": "1133"
                     }
                 }
             ],
             "translation": [
-                0.5995362,
-                -0.0,
-                -0.3023806
+                272.0516052,
+                127.6762695,
+                56.6308784
             ],
             "rotation": [
-                -0.0,
-                -0.0,
-                -0.0,
-                1.0
+                0.5,
+                0.4999999,
+                0.5000001,
+                -0.4999999
             ],
             "scaling": [
-                1.0,
-                1.0,
-                1.0
+                100.0000152,
+                100.0000152,
+                100.0000152
             ]
         },
         "922": {
@@ -3302,29 +3381,29 @@
                 "name": "Cup_glass_1.001_Cups_0<Cup_glass_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
                 "file": "Assets\\the_bathroom_free.glb"
             },
-            "parent": "860",
+            "parent": "710",
             "components": [
                 {
                     "mesh": {
-                        "material": "26"
+                        "material": "1130"
                     }
                 }
             ],
             "translation": [
-                -0.2423051,
-                -2.384186927884002e-7,
-                -0.2941921
+                273.7956848,
+                129.2243652,
+                13.5390014
             ],
             "rotation": [
-                -0.0,
-                -0.0,
-                -0.0,
-                1.0
+                0.4999998,
+                0.5000001,
+                0.5000001,
+                -0.4999998
             ],
             "scaling": [
-                1.0,
-                1.0,
-                1.0
+                99.9999923,
+                99.9999923,
+                95.0884475
             ]
         },
         "923": {
@@ -3338,24 +3417,45 @@
                     "mesh": {
                         "material": "22"
                     }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0399999
+                        }
+                    }
+                },
+                {
+                    "type": "secret",
+                    "secret": {
+                        "buttonMeshObject": "923",
+                        "hoverMaterial": null,
+                        "panelMeshObject": "1264",
+                        "textobject": "1265"
+                    }
                 }
             ],
             "translation": [
-                274.6325683,
-                102.9148941,
-                12.9228668
+                274.3984375,
+                103.5121459,
+                12.0949668
             ],
             "rotation": [
-                0.2362642,
+                0.2362641,
                 0.6664676,
-                0.6664677,
-                -0.2362642
+                0.6664678,
+                -0.2362643
             ],
             "scaling": [
-                104.0093612,
-                104.0093612,
-                91.8273315
-            ]
+                88.4079666,
+                88.4080123,
+                78.0532531
+            ],
+            "name": "secret-code"
         },
         "1116": {
             "link": {
@@ -3439,7 +3539,7 @@
                 },
                 {
                     "mesh": {
-                        "material": "20"
+                        "material": "1131"
                     }
                 }
             ]
@@ -4000,7 +4100,7 @@
             "rotation": [
                 5.821220838697627e-8,
                 0.7071014,
-                9.235528608542155e-8,
+                9.235528608542157e-8,
                 0.707112
             ],
             "scaling": [
@@ -4027,6 +4127,364 @@
                 1.2,
                 0.001
             ]
+        },
+        "1259": {
+            "link": {
+                "name": "Cup_Ceramic_4.001_Cups_0<Cup_Ceramic_4.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1133"
+                    }
+                }
+            ],
+            "translation": [
+                272.5629272,
+                128.4757995,
+                -4.4367866
+            ],
+            "rotation": [
+                0.2044558,
+                0.6769034,
+                0.6769025,
+                -0.2044564
+            ],
+            "scaling": [
+                60.8455162,
+                60.8455123,
+                60.8455429
+            ]
+        },
+        "1262": {
+            "link": {
+                "name": "Cup_Ceramic_3.001_Cups_0<Cup_Ceramic_3.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1131"
+                    }
+                }
+            ],
+            "translation": [
+                272.0505676,
+                102.2317962,
+                67.9659729
+            ],
+            "rotation": [
+                -0.6998869,
+                -0.1007876,
+                -0.1007878,
+                0.699887
+            ],
+            "scaling": [
+                100.0000305,
+                100.0000839,
+                116.8064041
+            ]
+        },
+        "1263": {
+            "link": {
+                "name": "Cup_Ceramic_1.001_Cups_0<Cup_Ceramic_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1134"
+                    }
+                }
+            ],
+            "translation": [
+                261.7883911,
+                104.8260345,
+                43.2822036
+            ],
+            "rotation": [
+                -0.7071068,
+                0.0,
+                0.0,
+                0.7071066
+            ],
+            "scaling": [
+                100.0,
+                99.9999618,
+                83.5662231
+            ]
+        },
+        "1264": {
+            "name": "PlaneWithCode",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "202"
+                    }
+                }
+            ],
+            "translation": [
+                2.3360376,
+                1.0341793,
+                0.0754718
+            ],
+            "rotation": [
+                0.0000408,
+                -0.7895302,
+                0.000047,
+                0.6137117
+            ],
+            "scaling": [
+                0.0665432,
+                0.0691921,
+                0.2494126
+            ]
+        },
+        "1265": {
+            "name": "codeText",
+            "parent": "1264",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": "5869"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                4.3399996,
+                4.3399996,
+                4.3399996
+            ]
+        },
+        "1266": {
+            "link": {
+                "name": "Cup_Ceramic_2.001_Cups_0<Cup_Ceramic_2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "930"
+                    }
+                }
+            ],
+            "translation": [
+                272.6738281,
+                127.8365173,
+                40.3429412
+            ],
+            "rotation": [
+                0.5,
+                0.4999999,
+                0.5000001,
+                -0.4999998
+            ],
+            "scaling": [
+                100.0000228,
+                100.0000228,
+                100.0000228
+            ]
+        },
+        "1268": {
+            "link": {
+                "name": "Cup_glass_1.001_Cups_0<Cup_glass_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1132"
+                    }
+                }
+            ],
+            "translation": [
+                273.8017578,
+                103.8213729,
+                56.7125854
+            ],
+            "rotation": [
+                0.5,
+                0.4999999,
+                0.5000001,
+                -0.4999998
+            ],
+            "scaling": [
+                100.0000228,
+                100.0000228,
+                111.7724456
+            ]
+        },
+        "1269": {
+            "link": {
+                "name": "Cup_Ceramic_4.001_Cups_0<Cup_Ceramic_4.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "856",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1131"
+                    }
+                }
+            ],
+            "translation": [
+                0.2322402,
+                -0.2494805,
+                0.6062002
+            ],
+            "rotation": [
+                7.143858624658606e-7,
+                0.0000014,
+                0.8322327,
+                0.5544264
+            ],
+            "scaling": [
+                0.8187423,
+                0.9999997,
+                0.9051547
+            ]
+        },
+        "1270": {
+            "link": {
+                "name": "Cup_Ceramic_1.001_Cups_0<Cup_Ceramic_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "20"
+                    }
+                }
+            ],
+            "translation": [
+                272.7683105,
+                126.3216476,
+                26.8888378
+            ],
+            "rotation": [
+                -0.7071068,
+                0.0,
+                0.0,
+                0.7071066
+            ],
+            "scaling": [
+                96.1435546,
+                119.3975372,
+                67.4374389
+            ]
+        },
+        "1276": {
+            "link": {
+                "name": "Cup_glass_1.001_Cups_0<Cup_glass_1.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "860",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1035"
+                    }
+                }
+            ],
+            "translation": [
+                -0.276706,
+                -0.0599207,
+                -0.5243953
+            ],
+            "rotation": [
+                -0.0,
+                -0.0,
+                -0.0,
+                1.0
+            ],
+            "scaling": [
+                0.8387642,
+                1.0,
+                0.7795575
+            ]
+        },
+        "1279": {
+            "link": {
+                "name": "Cup_Ceramic_2.001_Cups_0<Cup_Ceramic_2.001<RootNode<f23183533195409790a4349aa63eb407.fbx<Sketchfab_model",
+                "file": "Assets\\the_bathroom_free.glb"
+            },
+            "parent": "710",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1132"
+                    }
+                }
+            ],
+            "translation": [
+                272.6705932,
+                157.7522583,
+                17.0071334
+            ],
+            "rotation": [
+                0.5,
+                0.4999999,
+                0.5000001,
+                -0.4999998
+            ],
+            "scaling": [
+                100.0000228,
+                100.0000228,
+                121.4572219
+            ]
+        },
+        "1280": {
+            "name": "backgroundMusic",
+            "components": [
+                {
+                    "type": "howler-audio-source",
+                    "howler-audio-source": {
+                        "loop": true,
+                        "autoplay": true,
+                        "spatial": false,
+                        "src": "audio/spookyMystery.mp3",
+                        "volume": 1.0
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                1.4394775,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                0.9999999,
+                1.0,
+                1.0
+            ],
+            "parent": null
         }
     },
     "meshes": {
@@ -5781,77 +6239,29 @@
                 "file": "Assets\\the_bathroom_free.glb"
             }
         },
-        "927": {
-            "link": {
-                "name": "texture_0",
-                "file": "Assets\\antique_book_with_quill_and_key.glb"
-            }
-        },
-        "928": {
-            "link": {
-                "name": "texture_1",
-                "file": "Assets\\antique_book_with_quill_and_key.glb"
-            }
-        },
-        "929": {
-            "link": {
-                "name": "texture_2",
-                "file": "Assets\\antique_book_with_quill_and_key.glb"
-            }
-        },
-        "1032": {
-            "link": {
-                "name": "texture_0",
-                "file": "Assets\\antique_book_with_quill_and_key (1).glb"
-            }
-        },
-        "1033": {
-            "link": {
-                "name": "texture_1",
-                "file": "Assets\\antique_book_with_quill_and_key (1).glb"
-            }
-        },
-        "1034": {
-            "link": {
-                "name": "texture_2",
-                "file": "Assets\\antique_book_with_quill_and_key (1).glb"
-            }
-        },
         "1093": {
             "link": {
                 "name": "file12",
                 "file": "Assets\\old-book\\source\\book.fbx"
-            }
+            },
+            "image": "1284",
+            "name": "bookSide"
         },
         "1094": {
             "link": {
                 "name": "file10",
                 "file": "Assets\\old-book\\source\\book.fbx"
-            }
+            },
+            "image": "1287",
+            "name": "bookCover"
         },
         "1095": {
             "link": {
                 "name": "file11",
                 "file": "Assets\\old-book\\source\\book.fbx"
-            }
-        },
-        "1127": {
-            "link": {
-                "name": "texture_0",
-                "file": "Assets\\old_book.glb"
-            }
-        },
-        "1128": {
-            "link": {
-                "name": "texture_1",
-                "file": "Assets\\old_book.glb"
-            }
-        },
-        "1129": {
-            "link": {
-                "name": "texture_2",
-                "file": "Assets\\old_book.glb"
-            }
+            },
+            "name": "page",
+            "image": "1290"
         },
         "1159": {
             "link": {
@@ -5864,6 +6274,51 @@
                 "name": "texture_1",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             }
+        },
+        "1283": {
+            "name": "texture.000"
+        },
+        "1285": {
+            "link": {
+                "name": "BookSide0047_2_XL.jpg",
+                "file": "Assets\\old-book\\textures\\BookSide0047_2_XL.jpg"
+            },
+            "name": "BookSide"
+        },
+        "1288": {
+            "link": {
+                "name": "e1d2f6d9b892fca643eb74ba448b6cb2.jpg",
+                "file": "Assets\\old-book\\textures\\e1d2f6d9b892fca643eb74ba448b6cb2.jpg"
+            },
+            "name": "bookCover"
+        },
+        "1291": {
+            "link": {
+                "name": "Untitled-1.png",
+                "file": "Assets\\old-book\\textures\\Untitled-1.png"
+            },
+            "name": "page"
+        },
+        "1295": {
+            "link": {
+                "name": "brandon-morgan-H5Wv1YdbZzk-unsplash.jpg",
+                "file": "Assets\\img\\brandon-morgan-H5Wv1YdbZzk-unsplash.jpg"
+            },
+            "name": "Sky",
+            "image": "1297"
+        },
+        "1298": {
+            "link": {
+                "name": "satara_night_no_lamps_4k.hdr",
+                "file": "Assets\\img\\satara_night_no_lamps_4k.hdr"
+            }
+        },
+        "1301": {
+            "link": {
+                "name": "satara_night_4k.jpg",
+                "file": "Assets\\img\\satara_night_4k.jpg"
+            },
+            "image": "1300"
         }
     },
     "images": {
@@ -6164,6 +6619,42 @@
                 "name": "image_1",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             }
+        },
+        "1284": {
+            "link": {
+                "name": "BookSide0047_2_XL.jpg",
+                "file": "Assets\\old-book\\textures\\BookSide0047_2_XL.jpg"
+            }
+        },
+        "1287": {
+            "link": {
+                "name": "e1d2f6d9b892fca643eb74ba448b6cb2.jpg",
+                "file": "Assets\\old-book\\textures\\e1d2f6d9b892fca643eb74ba448b6cb2.jpg"
+            }
+        },
+        "1290": {
+            "link": {
+                "name": "Untitled-1.png",
+                "file": "Assets\\old-book\\textures\\Untitled-1.png"
+            }
+        },
+        "1294": {
+            "link": {
+                "name": "brandon-morgan-H5Wv1YdbZzk-unsplash.jpg",
+                "file": "Assets\\img\\brandon-morgan-H5Wv1YdbZzk-unsplash.jpg"
+            }
+        },
+        "1297": {
+            "link": {
+                "name": "satara_night_no_lamps_4k.hdr",
+                "file": "Assets\\img\\satara_night_no_lamps_4k.hdr"
+            }
+        },
+        "1300": {
+            "link": {
+                "name": "satara_night_4k.jpg",
+                "file": "Assets\\img\\satara_night_4k.jpg"
+            }
         }
     },
     "materials": {
@@ -6192,7 +6683,19 @@
                     9.999999974752427e-7,
                     1.0
                 ],
-                "shininess": 1
+                "shininess": 1,
+                "ambientColor": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.2178734,
+                    0.4529147,
+                    0.1868527,
+                    1.0
+                ]
             }
         },
         "22": {
@@ -6315,9 +6818,9 @@
             "name": "TextAccent",
             "Text": {
                 "color": [
-                    0.9098039,
+                    1.0,
                     0.0,
-                    0.5411764,
+                    0.0,
                     1.0
                 ],
                 "font": "230"
@@ -6464,12 +6967,40 @@
             "link": {
                 "name": "Books_Material",
                 "file": "Assets\\antique_book_with_quill_and_key.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.1142994,
+                    0.9103139,
+                    0.8567701,
+                    1.0
+                ]
             }
         },
         "1035": {
             "link": {
                 "name": "Books_Material",
                 "file": "Assets\\antique_book_with_quill_and_key (1).glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.0594019,
+                    0.194607,
+                    0.9461883,
+                    1.0
+                ],
+                "ambientColor": [
+                    0.0703412,
+                    0.0947128,
+                    0.147982,
+                    1.0
+                ],
+                "fogColor": [
+                    0.3049327,
+                    0.3049327,
+                    0.3049327,
+                    0.735426
+                ]
             }
         },
         "1096": {
@@ -6506,30 +7037,76 @@
             "link": {
                 "name": "lambert1",
                 "file": "Assets\\old_book.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.5212293,
+                    0.0810794,
+                    0.7533632,
+                    1.0
+                ]
             }
         },
         "1131": {
             "link": {
                 "name": "lambert46",
                 "file": "Assets\\old_book.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.367713,
+                    0.367713,
+                    0.367713,
+                    1.0
+                ]
             }
         },
         "1132": {
             "link": {
                 "name": "side_texture",
                 "file": "Assets\\old_book.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    1.0,
+                    0.0403587,
+                    0.0403587,
+                    1.0
+                ],
+                "diffuseColor": [
+                    0.5291479,
+                    0.38036,
+                    0.1091516,
+                    1.0
+                ]
             }
         },
         "1133": {
             "link": {
                 "name": "font_texture",
                 "file": "Assets\\old_book.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.9192824,
+                    0.0577127,
+                    0.0577127,
+                    1.0
+                ]
             }
         },
         "1134": {
             "link": {
                 "name": "cover",
                 "file": "Assets\\old_book.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.6860986,
+                    0.5362935,
+                    0.1384504,
+                    1.0
+                ]
             }
         },
         "1161": {
@@ -6566,6 +7143,13 @@
             "link": {
                 "name": "numbers",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
+            }
+        },
+        "1281": {
+            "name": "Sky",
+            "pipeline": "229",
+            "Sky": {
+                "texture": "1295"
             }
         }
     },
@@ -6810,6 +7394,29 @@
                     "local-floor": true
                 }
             }
+        },
+        "rendering": {
+            "sky": {
+                "enabled": false,
+                "material": "1130"
+            },
+            "bloom": {
+                "intensity": 2.2
+            },
+            "textureAtlasSize": [
+                8192,
+                4096
+            ],
+            "compressedTextureAtlasSize": [
+                8192,
+                8192
+            ],
+            "clearColor": [
+                0.0738607,
+                0.0354722,
+                0.1883407,
+                1.0
+            ]
         }
     },
     "animations": {
@@ -7050,6 +7657,30 @@
         },
         "1246": {
             "fileName": "Assets/low_poly_panel_code__keypad.glb",
+            "importerName": ""
+        },
+        "1286": {
+            "fileName": "Assets/old-book/textures/BookSide0047_2_XL.jpg",
+            "importerName": ""
+        },
+        "1289": {
+            "fileName": "Assets/old-book/textures/e1d2f6d9b892fca643eb74ba448b6cb2.jpg",
+            "importerName": ""
+        },
+        "1292": {
+            "fileName": "Assets/old-book/textures/Untitled-1.png",
+            "importerName": ""
+        },
+        "1296": {
+            "fileName": "Assets/img/brandon-morgan-H5Wv1YdbZzk-unsplash.jpg",
+            "importerName": ""
+        },
+        "1299": {
+            "fileName": "Assets/img/satara_night_no_lamps_4k.hdr",
+            "importerName": ""
+        },
+        "1302": {
+            "fileName": "Assets/img/satara_night_4k.jpg",
             "importerName": ""
         }
     },
