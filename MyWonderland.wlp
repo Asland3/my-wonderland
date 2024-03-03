@@ -3571,7 +3571,12 @@
                 "name": "GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1194"
+            "parent": "1194",
+            "components": [
+                {
+                    "type": "mesh"
+                }
+            ]
         },
         "1196": {
             "link": {
@@ -3599,7 +3604,31 @@
                 "name": "Object_6<Cube.001_3<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1198"
+            "parent": "1198",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "NumberButton",
+                    "NumberButton": {
+                        "buttonMeshObject": "1199",
+                        "hoverMaterial": "26",
+                        "stringToAdd": "8",
+                        "textobject": "1259"
+                    }
+                }
+            ],
+            "name": "key 8"
         },
         "1200": {
             "link": {
@@ -3613,7 +3642,64 @@
                 "name": "Object_8<Cube.002_4<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1200"
+            "parent": "1200",
+            "name": "key 9",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        },
+                        "collider": "sphere",
+                        "aabb": {
+                            "extents": [
+                                0.1,
+                                0.1,
+                                0.2
+                            ]
+                        },
+                        "box": {
+                            "extents": [
+                                1.7999999,
+                                1.0,
+                                1.0
+                            ]
+                        },
+                        "groups": 255
+                    },
+                    "active": true
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "NumberButton",
+                    "NumberButton": {
+                        "buttonMeshObject": "1201",
+                        "stringToAdd": "9",
+                        "hoverMaterial": "26",
+                        "textobject": "1259"
+                    }
+                }
+            ],
+            "translation": [
+                -0.0000052,
+                0.000019,
+                0.0
+            ],
+            "rotation": [
+                -0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                0.9731779,
+                1.0
+            ]
         },
         "1202": {
             "link": {
@@ -3627,7 +3713,31 @@
                 "name": "Object_10<Cube.003_5<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1202"
+            "parent": "1202",
+            "name": "key 7",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "NumberButton",
+                    "NumberButton": {
+                        "buttonMeshObject": "1203",
+                        "hoverMaterial": "26",
+                        "stringToAdd": "7",
+                        "textobject": "1259"
+                    }
+                }
+            ]
         },
         "1204": {
             "link": {
@@ -3641,7 +3751,31 @@
                 "name": "Object_12<Cube.004_6<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1204"
+            "parent": "1204",
+            "name": "key 4",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "NumberButton",
+                    "NumberButton": {
+                        "buttonMeshObject": "1205",
+                        "hoverMaterial": "26",
+                        "stringToAdd": "4",
+                        "textobject": "1259"
+                    }
+                }
+            ]
         },
         "1206": {
             "link": {
@@ -3655,7 +3789,48 @@
                 "name": "Object_14<Cube.005_7<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1206"
+            "parent": "1206",
+            "name": "key 1",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "active": true,
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "NumberButton",
+                    "NumberButton": {
+                        "buttonMeshObject": "1207",
+                        "hoverMaterial": "26",
+                        "stringToAdd": "1",
+                        "textobject": "1259"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0299999,
+                0.9300002,
+                0.9300002
+            ]
         },
         "1208": {
             "link": {
@@ -3669,7 +3844,47 @@
                 "name": "Object_16<Cube.006_8<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1208"
+            "parent": "1208",
+            "name": "key 3",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "NumberButton",
+                    "NumberButton": {
+                        "buttonMeshObject": "1209",
+                        "hoverMaterial": "26",
+                        "stringToAdd": "3",
+                        "textobject": "1259"
+                    }
+                }
+            ],
+            "translation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
         },
         "1210": {
             "link": {
@@ -3683,7 +3898,31 @@
                 "name": "Object_18<Cube.007_9<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1210"
+            "parent": "1210",
+            "name": "key 2",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "NumberButton",
+                    "NumberButton": {
+                        "buttonMeshObject": "1211",
+                        "hoverMaterial": "26",
+                        "stringToAdd": "2",
+                        "textobject": "1259"
+                    }
+                }
+            ]
         },
         "1212": {
             "link": {
@@ -3697,7 +3936,31 @@
                 "name": "Object_20<Cube.008_10<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1212"
+            "parent": "1212",
+            "name": "key 5",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "NumberButton",
+                    "NumberButton": {
+                        "buttonMeshObject": "1213",
+                        "hoverMaterial": "26",
+                        "stringToAdd": "5",
+                        "textobject": "1259"
+                    }
+                }
+            ]
         },
         "1214": {
             "link": {
@@ -3711,7 +3974,31 @@
                 "name": "Object_22<Cube.009_11<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1214"
+            "parent": "1214",
+            "name": "key 6",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "NumberButton",
+                    "NumberButton": {
+                        "buttonMeshObject": "1215",
+                        "hoverMaterial": "26",
+                        "stringToAdd": "6",
+                        "textobject": "1259"
+                    }
+                }
+            ]
         },
         "1216": {
             "link": {
@@ -3719,13 +4006,6 @@
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
             "parent": "1195"
-        },
-        "1217": {
-            "link": {
-                "name": "Object_24<Cube.010_12<GLTF_SceneRootNode<root<Sketchfab_model",
-                "file": "Assets\\low_poly_panel_code__keypad.glb"
-            },
-            "parent": "1216"
         },
         "1218": {
             "link": {
@@ -3739,7 +4019,34 @@
                 "name": "Object_26<Cube.011_13<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1218"
+            "parent": "1218",
+            "name": "key delete",
+            "components": [
+                {
+                    "mesh": {
+                        "material": "1162"
+                    }
+                },
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "ClearButton",
+                    "ClearButton": {
+                        "buttonMeshObject": "1219",
+                        "hoverMaterial": "1133",
+                        "textobject": "1259"
+                    }
+                }
+            ]
         },
         "1220": {
             "link": {
@@ -3753,7 +4060,31 @@
                 "name": "Object_28<Cube.012_14<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1220"
+            "parent": "1220",
+            "name": "key 0",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "NumberButton",
+                    "NumberButton": {
+                        "buttonMeshObject": "1221",
+                        "hoverMaterial": "26",
+                        "stringToAdd": "0",
+                        "textobject": "1259"
+                    }
+                }
+            ]
         },
         "1222": {
             "link": {
@@ -3788,7 +4119,10 @@
                 "name": "Object_32<Cube.013_25<GLTF_SceneRootNode<root<Sketchfab_model",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
             },
-            "parent": "1222"
+            "parent": "1222",
+            "components": [
+                null
+            ]
         },
         "1226": {
             "link": {
@@ -3955,7 +4289,7 @@
             "name": "Locked_door"
         },
         "1252": {
-            "name": "Locked-Text",
+            "name": "DoorText",
             "components": [
                 {
                     "type": "text",
@@ -3965,21 +4299,22 @@
                 }
             ],
             "translation": [
-                0.6957623,
-                1.6582373,
-                2.1646316
+                -0.7925656,
+                -0.0866103,
+                1.3688781
             ],
             "rotation": [
-                -7.549790836947069e-8,
-                1.0,
-                -7.549790836947069e-8,
-                -4.371138118131057e-8
+                0.7070527,
+                0.0017372,
+                0.0017372,
+                0.7071565
             ],
             "scaling": [
-                1.0,
-                1.0,
-                1.0
-            ]
+                1.000036,
+                1.0000225,
+                1.0000243
+            ],
+            "parent": "1193"
         },
         "1256": {
             "name": "inScreenPanel",
@@ -4000,7 +4335,7 @@
             "rotation": [
                 5.821220838697627e-8,
                 0.7071014,
-                9.235528608542155e-8,
+                9.235528608542157e-8,
                 0.707112
             ],
             "scaling": [
@@ -4026,6 +4361,81 @@
                 0.6999999,
                 1.2,
                 0.001
+            ]
+        },
+        "1259": {
+            "name": "numberpad",
+            "parent": "1224",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": ""
+                    }
+                }
+            ],
+            "translation": [
+                0.001945,
+                0.769977,
+                2.1413874
+            ],
+            "rotation": [
+                2.9773218557238582e-8,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.5,
+                1.0,
+                1.0
+            ]
+        },
+        "1217": {
+            "link": {
+                "name": "Object_24<Cube.010_12<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "Assets\\low_poly_panel_code__keypad.glb"
+            },
+            "parent": "1216",
+            "name": "key enter",
+            "components": [
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.0199999
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "EnterButton",
+                    "EnterButton": {
+                        "buttonMeshObject": "1217",
+                        "hoverMaterial": "26",
+                        "textobject": "1259",
+                        "blackScreenObject": "1268",
+                        "textobject2": "1252"
+                    }
+                }
+            ]
+        },
+        "1269": {
+            "name": "audio",
+            "components": [
+                {
+                    "type": "howler-audio-source",
+                    "howler-audio-source": {
+                        "src": "/Assets/sound.mp3",
+                        "autoplay": true
+                    }
+                },
+                {
+                    "type": "howler-audio-listener"
+                }
             ]
         }
     },
@@ -6524,6 +6934,20 @@
             "link": {
                 "name": "font_texture",
                 "file": "Assets\\old_book.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "diffuseColor": [
+                    1.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
             }
         },
         "1134": {
@@ -6542,6 +6966,14 @@
             "link": {
                 "name": "buttons",
                 "file": "Assets\\low_poly_panel_code__keypad.glb"
+            },
+            "Phong": {
+                "ambientColor": [
+                    0.1748878,
+                    0.1270485,
+                    0.1270485,
+                    1.0
+                ]
             }
         },
         "1163": {

@@ -2748,7 +2748,7 @@ __export(dist_exports, {
   Emitter: () => Emitter,
   ForceMode: () => ForceMode,
   I18N: () => I18N,
-  InputComponent: () => InputComponent,
+  InputComponent: () => InputComponent2,
   InputType: () => InputType,
   Justification: () => Justification,
   LightComponent: () => LightComponent,
@@ -4275,7 +4275,7 @@ __decorate([
 __decorate([
   nativeProperty()
 ], ViewComponent.prototype, "fov", null);
-var InputComponent = class extends Component {
+var InputComponent2 = class extends Component {
   /** Input component type */
   get inputType() {
     return this._engine.wasm._wl_input_component_get_type(this._id);
@@ -4316,16 +4316,16 @@ var InputComponent = class extends Component {
   }
 };
 /** @override */
-__publicField(InputComponent, "TypeName", "input");
+__publicField(InputComponent2, "TypeName", "input");
 __decorate([
   nativeProperty()
-], InputComponent.prototype, "inputType", null);
+], InputComponent2.prototype, "inputType", null);
 __decorate([
   enumerable()
-], InputComponent.prototype, "xrInputSource", null);
+], InputComponent2.prototype, "xrInputSource", null);
 __decorate([
   enumerable()
-], InputComponent.prototype, "handedness", null);
+], InputComponent2.prototype, "handedness", null);
 var LightComponent = class extends Component {
   getColor(out = new Float32Array(3)) {
     const wasm = this._engine.wasm;
@@ -8772,7 +8772,7 @@ var WonderlandEngine = class {
     } else if (type == "mesh") {
       component = new MeshComponent(this, componentType, componentId);
     } else if (type == "input") {
-      component = new InputComponent(this, componentType, componentId);
+      component = new InputComponent2(this, componentType, componentId);
     } else if (type == "light") {
       component = new LightComponent(this, componentType, componentId);
     } else if (type == "animation") {
@@ -15454,8 +15454,8 @@ __publicField(WasdControlsComponent, "Properties", {
 });
 
 // js/book.js
-function hapticFeedback(object, strength, duration) {
-  const input = object.getComponent(InputComponent);
+function hapticFeedback2(object, strength, duration) {
+  const input = object.getComponent(InputComponent2);
   if (input && input.xrInputSource) {
     const gamepad = input.xrInputSource.gamepad;
     if (gamepad && gamepad.hapticActuators)
@@ -15487,18 +15487,18 @@ var Book = class extends Component {
   /* Called by 'cursor-target' */
   onHover = (_, cursor) => {
     this.mesh.material = this.hoverMaterial;
-    hapticFeedback(cursor.object, 0.5, 50);
+    hapticFeedback2(cursor.object, 0.5, 50);
   };
   /* Called by 'cursor-target' */
   onClick = (_, cursor) => {
     this.panelMeshObject.active = true;
     this.textobject.active = true;
-    hapticFeedback(cursor.object, 1, 20);
+    hapticFeedback2(cursor.object, 1, 20);
   };
   /* Called by 'cursor-target' */
   onUnhover = (_, cursor) => {
     this.mesh.material = this.defaultMaterial;
-    hapticFeedback(cursor.object, 0.3, 50);
+    hapticFeedback2(cursor.object, 0.3, 50);
   };
 };
 __publicField(Book, "TypeName", "book");
@@ -15510,6 +15510,54 @@ __publicField(Book, "Properties", {
   hoverMaterial: Property.material(),
   /** Object that has the panel's mesh attached */
   panelMeshObject: Property.object(),
+  textobject: Property.object()
+});
+
+// js/clearbutton.js
+var ClearButton = class extends Component {
+  start() {
+    this.mesh = this.buttonMeshObject.getComponent(MeshComponent);
+    this.defaultMaterial = this.mesh.material;
+    this.buttonMeshObject.getTranslationLocal(this.returnPos);
+    this.target = this.object.getComponent(CursorTarget) || this.object.addComponent(CursorTarget);
+  }
+  onActivate() {
+    this.target.onHover.add(this.onHover);
+    this.target.onUnhover.add(this.onUnhover);
+    this.target.onClick.add(this.onClick);
+  }
+  onDeactivate() {
+    this.target.onHover.remove(this.onHover);
+    this.target.onUnhover.remove(this.onUnhover);
+    this.target.onClick.remove(this.onClick);
+  }
+  /* Called by 'cursor-target' */
+  onHover = (_, cursor) => {
+    this.mesh.material = this.hoverMaterial;
+    hapticFeedback(cursor.object, 0.5, 50);
+  };
+  /* Called by 'cursor-target' */
+  onClick = (_, cursor) => {
+    console.log("clicked");
+    const textComponent = this.textobject.getComponent("text");
+    if (textComponent) {
+      textComponent.text = "";
+    }
+    hapticFeedback(cursor.object, 1, 20);
+  };
+  /* Called by 'cursor-target' */
+  onUnhover = (_, cursor) => {
+    this.mesh.material = this.defaultMaterial;
+    hapticFeedback(cursor.object, 0.3, 50);
+  };
+};
+__publicField(ClearButton, "TypeName", "ClearButton");
+__publicField(ClearButton, "Properties", {
+  /** Object that has the button's mesh attached */
+  buttonMeshObject: Property.object(),
+  /** Material to apply when the user hovers the button */
+  hoverMaterial: Property.material(),
+  /** The text object to clear */
   textobject: Property.object()
 });
 
@@ -15543,6 +15591,128 @@ __publicField(Countdown, "TypeName", "Countdown");
 __publicField(Countdown, "Properties", {
   param: Property.float(7200)
   // Set the initial countdown time here (1 hour = 3600 seconds)
+});
+
+// js/enterbutton.js
+function hapticFeedback3(object, strength, duration) {
+  const input = object.getComponent(InputComponent);
+  if (input && input.xrInputSource) {
+    const gamepad = input.xrInputSource.gamepad;
+    if (gamepad && gamepad.hapticActuators)
+      gamepad.hapticActuators[0].pulse(strength, duration);
+  }
+}
+var EnterButton = class extends Component {
+  start() {
+    this.mesh = this.buttonMeshObject.getComponent(MeshComponent);
+    this.defaultMaterial = this.mesh.material;
+    this.buttonMeshObject.getTranslationLocal(this.returnPos);
+    this.target = this.object.getComponent(CursorTarget) || this.object.addComponent(CursorTarget);
+  }
+  onActivate() {
+    this.target.onHover.add(this.onHover);
+    this.target.onUnhover.add(this.onUnhover);
+    this.target.onClick.add(this.onClick);
+  }
+  onDeactivate() {
+    this.target.onHover.remove(this.onHover);
+    this.target.onUnhover.remove(this.onUnhover);
+    this.target.onClick.remove(this.onClick);
+  }
+  /* Called by 'cursor-target' */
+  onHover = (_, cursor) => {
+    this.mesh.material = this.hoverMaterial;
+    hapticFeedback3(cursor.object, 0.5, 50);
+  };
+  /* Called by 'cursor-target' */
+  onClick = (_, cursor) => {
+    console.log("clicked");
+    const textComponent = this.textobject.getComponent("text");
+    const textComponent2 = this.textobject2.getComponent("text");
+    if (textComponent) {
+      if (textComponent.text === "5869") {
+        textComponent.text = "Correct";
+        textComponent2.text = "Unlocked";
+      } else {
+        textComponent.text = "";
+      }
+    }
+    hapticFeedback3(cursor.object, 1, 20);
+  };
+  /* Called by 'cursor-target' */
+  onUnhover = (_, cursor) => {
+    this.mesh.material = this.defaultMaterial;
+    hapticFeedback3(cursor.object, 0.3, 50);
+  };
+};
+__publicField(EnterButton, "TypeName", "EnterButton");
+__publicField(EnterButton, "Properties", {
+  /** Object that has the button's mesh attached */
+  buttonMeshObject: Property.object(),
+  /** Material to apply when the user hovers the button */
+  hoverMaterial: Property.material(),
+  /** The text object to check and modify */
+  textobject: Property.object(),
+  textobject2: Property.object()
+});
+
+// js/numberbutton.js
+function hapticFeedback4(object, strength, duration) {
+  const input = object.getComponent(InputComponent2);
+  if (input && input.xrInputSource) {
+    const gamepad = input.xrInputSource.gamepad;
+    if (gamepad && gamepad.hapticActuators)
+      gamepad.hapticActuators[0].pulse(strength, duration);
+  }
+}
+var NumberButton = class extends Component {
+  start() {
+    this.mesh = this.buttonMeshObject.getComponent(MeshComponent);
+    this.defaultMaterial = this.mesh.material;
+    this.buttonMeshObject.getTranslationLocal(this.returnPos);
+    this.target = this.object.getComponent(CursorTarget) || this.object.addComponent(CursorTarget);
+  }
+  onActivate() {
+    this.target.onHover.add(this.onHover);
+    this.target.onUnhover.add(this.onUnhover);
+    this.target.onClick.add(this.onClick);
+  }
+  onDeactivate() {
+    this.target.onHover.remove(this.onHover);
+    this.target.onUnhover.remove(this.onUnhover);
+    this.target.onClick.remove(this.onClick);
+  }
+  /* Called by 'cursor-target' */
+  onHover = (_, cursor) => {
+    this.mesh.material = this.hoverMaterial;
+    hapticFeedback4(cursor.object, 0.5, 50);
+  };
+  /* Called by 'cursor-target' */
+  onClick = (_, cursor) => {
+    console.log("clicked");
+    const textComponent = this.textobject.getComponent("text");
+    if (textComponent) {
+      let newText = textComponent.text + this.stringToAdd;
+      textComponent.text = newText;
+    }
+    hapticFeedback4(cursor.object, 1, 20);
+  };
+  /* Called by 'cursor-target' */
+  onUnhover = (_, cursor) => {
+    this.mesh.material = this.defaultMaterial;
+    hapticFeedback4(cursor.object, 0.3, 50);
+  };
+};
+__publicField(NumberButton, "TypeName", "NumberButton");
+__publicField(NumberButton, "Properties", {
+  /** Object that has the button's mesh attached */
+  buttonMeshObject: Property.object(),
+  /** Material to apply when the user hovers the button */
+  hoverMaterial: Property.material(),
+  /** The string this button should add to the text field */
+  stringToAdd: Property.string(),
+  /** The text object to modify */
+  textobject: Property.object()
 });
 
 // js/index.js
@@ -15596,13 +15766,17 @@ engine.registerComponent(CursorTarget);
 engine.registerComponent(FingerCursor);
 engine.registerComponent(HandTracking);
 engine.registerComponent(HowlerAudioListener);
+engine.registerComponent(HowlerAudioSource);
 engine.registerComponent(MouseLookComponent);
 engine.registerComponent(PlayerHeight);
 engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
 engine.registerComponent(WasdControlsComponent);
 engine.registerComponent(Book);
+engine.registerComponent(ClearButton);
 engine.registerComponent(Countdown);
+engine.registerComponent(EnterButton);
+engine.registerComponent(NumberButton);
 engine.scene.load(`${Constants.ProjectName}.bin`).catch((e) => {
   console.error(e);
   window.alert(`Failed to load ${Constants.ProjectName}.bin:`, e);
